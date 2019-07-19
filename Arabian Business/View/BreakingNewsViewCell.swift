@@ -7,10 +7,16 @@
 //
 
 import UIKit
-
+import MarqueeLabel
 class BreakingNewsViewCell: UITableViewCell {
 
-    @IBOutlet weak var newsLabel: UILabel!
     
-    
+    @IBOutlet weak var newsLabel: MarqueeLabel!
+   
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+ 
+
+    }
 }

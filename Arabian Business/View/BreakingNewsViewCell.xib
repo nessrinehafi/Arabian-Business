@@ -38,11 +38,16 @@
                             <color key="titleColor" red="0.92422360181808472" green="0.001811581663787365" blue="0.096887923777103424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIr-8h-HKQ">
-                        <rect key="frame" x="169" y="21" width="225" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIr-8h-HKQ" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="128" y="21" width="286" height="21"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="labelize" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="holdScrolling" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="tapToScroll" value="NO"/>
+                        </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
             </tableViewCellContentView>
@@ -50,7 +55,7 @@
             <constraints>
                 <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Ryg-lO-3hl" secondAttribute="trailing" constant="300" id="3Pw-R8-dxL"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="F2p-Si-2e0" secondAttribute="bottom" constant="0.5" id="Nt0-0S-a6v"/>
-                <constraint firstItem="EIr-8h-HKQ" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="169" id="Rza-Yt-pdw"/>
+                <constraint firstItem="EIr-8h-HKQ" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="128" id="Rza-Yt-pdw"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="F2p-Si-2e0" secondAttribute="trailing" id="X11-IJ-43L"/>
                 <constraint firstItem="Ryg-lO-3hl" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="27" id="XFN-CW-0JA"/>
                 <constraint firstItem="Ryg-lO-3hl" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="17" id="cBW-xn-flC"/>
@@ -58,12 +63,12 @@
                 <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="Ryg-lO-3hl" secondAttribute="bottom" constant="16" id="hSO-7H-vrA"/>
                 <constraint firstItem="F2p-Si-2e0" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="ndh-a5-hZk"/>
                 <constraint firstItem="F2p-Si-2e0" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="pzK-dq-cR8"/>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="EIr-8h-HKQ" secondAttribute="trailing" constant="20" id="xsI-K7-Lh6"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="EIr-8h-HKQ" secondAttribute="trailing" id="xsI-K7-Lh6"/>
                 <constraint firstItem="EIr-8h-HKQ" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="21" id="ynT-Bq-ha6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="newsLabel" destination="EIr-8h-HKQ" id="vG9-l3-JXb"/>
+                <outlet property="newsLabel" destination="EIr-8h-HKQ" id="t5O-FA-BdC"/>
             </connections>
             <point key="canvasLocation" x="115.94202898550725" y="29.799107142857142"/>
         </tableViewCell>

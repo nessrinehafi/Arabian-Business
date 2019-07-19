@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource ,UIScrollViewDelegate , UITabBarControllerDelegate  {
     @IBOutlet weak var navigationItel: UINavigationItem!
     
@@ -21,7 +20,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     
     
     
- 
+
     
 //// table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,14 +33,14 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
         {
             let cell = Bundle.main.loadNibNamed("FeaturesTableViewCell", owner: self, options: nil)?.first as! FeaturesTableViewCell
 
-            cell.titleLabel.text = "First"
+            
             return cell
 
         }
        else if (indexPath.row == 1)
         {
             let cell = Bundle.main.loadNibNamed("BreakingNewsViewCell", owner: self, options: nil)?.first as! BreakingNewsViewCell
-            cell.newsLabel.text = "heyy"
+            cell.newsLabel.text = "heyyllflfllfepraflapêrg^peakg^pearkg^praegk^pegkp^zekg^pzekg^pekrg^pekg^pekg^pekg^pke^pgk^pekrgp^kea^pgkaêpgkâpekg"
             return cell
 
             
@@ -50,6 +49,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
             let cell = Bundle.main.loadNibNamed("NewViewCellTableViewCell", owner: self, options: nil)?.first as! NewViewCellTableViewCell
             
             cell.titleLabel.text = "NEWS"
+            
             return cell
         }
 
@@ -60,7 +60,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.row == 0)
         {
-            return 296.5
+            return 295
             
         }
         else if (indexPath.row == 1)

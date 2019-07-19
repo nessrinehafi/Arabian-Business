@@ -9,14 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Roboto-Light.ttf">
-            <string>Roboto-Light</string>
-        </array>
-        <array key="Roboto-Medium.ttf">
-            <string>Roboto-Medium</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,120 +19,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="296.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-72-QVp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </scrollView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 2" translatesAutoresizingMaskIntoConstraints="NO" id="qqv-fH-X6y" userLabel="NewsImage">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gdV-2g-GGS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="296.5"/>
-                    </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="gan-FT-RdY">
-                        <rect key="frame" x="15" y="227" width="265" height="18"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cUX-8A-25Y" userLabel="Calendar Stack View">
-                                <rect key="frame" x="0.0" y="0.0" width="104" height="18"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-6Z-uPb" userLabel="CalendarImage">
-                                        <rect key="frame" x="0.0" y="0.0" width="17" height="18"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 22 , 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-JO-hsj">
-                                        <rect key="frame" x="25" y="0.0" width="79" height="18"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nvx-M2-DKX" userLabel="Views Stack View">
-                                <rect key="frame" x="137" y="0.0" width="49" height="18"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Preview" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qx6-X5-edD" userLabel="ViewsImage">
-                                        <rect key="frame" x="0.0" y="0.0" width="19" height="18"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNn-bA-XRR">
-                                        <rect key="frame" x="26" y="0.0" width="23" height="18"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="jpO-3y-CDN" userLabel="Likes Stack View">
-                                <rect key="frame" x="219" y="0.0" width="46" height="18"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 38" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Q5-qN-edO" userLabel="LikeImage">
-                                        <rect key="frame" x="0.0" y="0.0" width="17" height="18"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egX-RM-NXK">
-                                        <rect key="frame" x="24" y="0.0" width="22" height="18"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                    </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="///////////////////////////////////////////////////" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qe0-8k-6y7">
-                        <rect key="frame" x="16" y="250" width="240" height="20"/>
-                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </label>
-                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-B6-pwD">
-                        <rect key="frame" x="169" y="259" width="39" height="37"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AXX-E2-q05">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="d9A-Vb-waO"/>
+                            <outlet property="delegate" destination="-1" id="p7E-Dt-JU9"/>
+                        </connections>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="wCU-NN-Ldq">
+                        <rect key="frame" x="192" y="259" width="31" height="37"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </pageControl>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Copy" translatesAutoresizingMaskIntoConstraints="NO" id="mPX-7U-hvD" userLabel="NewsType">
-                        <rect key="frame" x="378" y="12" width="24" height="23"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="24" id="ay1-WW-pNL"/>
-                            <constraint firstAttribute="height" constant="23" id="dJl-Yi-Aek"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="qqv-fH-X6y" secondAttribute="trailing" id="PV1-Pm-Lke"/>
-                    <constraint firstItem="mPX-7U-hvD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-43" id="Qbo-I3-8fY"/>
-                    <constraint firstAttribute="bottom" secondItem="qqv-fH-X6y" secondAttribute="bottom" id="XHa-05-8Az"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="mPX-7U-hvD" secondAttribute="trailing" constant="-8" id="ckt-Ta-s1X"/>
-                    <constraint firstItem="qqv-fH-X6y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eBV-H9-TIx"/>
-                    <constraint firstItem="gan-FT-RdY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="pOx-BB-jU6"/>
-                    <constraint firstItem="Qe0-8k-6y7" firstAttribute="top" secondItem="gan-FT-RdY" secondAttribute="bottom" constant="5" id="uyC-dq-ePC"/>
-                    <constraint firstItem="qqv-fH-X6y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vFi-2X-p4t"/>
-                    <constraint firstItem="Qe0-8k-6y7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="w73-zp-BwO"/>
+                    <constraint firstAttribute="trailing" secondItem="gdV-2g-GGS" secondAttribute="trailing" id="RvY-Rd-ZDh"/>
+                    <constraint firstItem="gdV-2g-GGS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aTc-ox-Kpb"/>
+                    <constraint firstItem="gdV-2g-GGS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mBu-qi-oNn"/>
+                    <constraint firstItem="gdV-2g-GGS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vm1-x5-chG"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="qqv-fH-X6y" secondAttribute="trailing" id="Law-TV-xkm"/>
-                <constraint firstItem="Qe0-8k-6y7" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="250" id="TXn-kF-ph9"/>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Qe0-8k-6y7" secondAttribute="trailing" constant="158" id="U7a-c3-whM"/>
-                <constraint firstItem="qqv-fH-X6y" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="gqb-Ye-jCm"/>
-                <constraint firstItem="qqv-fH-X6y" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="viU-mu-n5l"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dataType" destination="mPX-7U-hvD" id="Qcg-Ol-SjX"/>
-                <outlet property="dateLabel" destination="yEs-JO-hsj" id="brA-j2-tDJ"/>
-                <outlet property="featureScroller" destination="gGF-72-QVp" id="cro-D8-wos"/>
-                <outlet property="likesLabel" destination="egX-RM-NXK" id="7Hx-OJ-ENT"/>
-                <outlet property="mainImage" destination="qqv-fH-X6y" id="b7E-CR-C2c"/>
-                <outlet property="pageController" destination="rbd-B6-pwD" id="p8H-dX-9hF"/>
-                <outlet property="titleLabel" destination="Qe0-8k-6y7" id="Xve-NW-sar"/>
-                <outlet property="viewsLabel" destination="PNn-bA-XRR" id="VFb-QG-K4g"/>
+                <outlet property="PageController" destination="wCU-NN-Ldq" id="uaN-xh-pOY"/>
+                <outlet property="featuresViewCollection" destination="gdV-2g-GGS" id="53i-ZU-veh"/>
             </connections>
             <point key="canvasLocation" x="234.78260869565219" y="-69.308035714285708"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Calendar" width="17" height="18"/>
-        <image name="Icon Copy" width="20" height="20"/>
-        <image name="Line 38" width="17" height="17"/>
-        <image name="Preview" width="19" height="13"/>
-        <image name="image 2" width="165" height="134"/>
-    </resources>
 </document>
