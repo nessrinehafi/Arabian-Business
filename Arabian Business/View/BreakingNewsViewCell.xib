@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="BreakingNewsViewCell" customModule="Arabian_Business" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="F2p-Si-2e0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 2 Copy 4" translatesAutoresizingMaskIntoConstraints="NO" id="LkM-lt-t7H">
+                        <rect key="frame" x="20" y="7" width="100" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryg-lO-3hl">
+                        <rect key="frame" x="27" y="17" width="87" height="28"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="13"/>
+                        <state key="normal" title="breaking News">
+                            <color key="titleColor" red="0.92422360181808472" green="0.001811581663787365" blue="0.096887923777103424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIr-8h-HKQ">
+                        <rect key="frame" x="169" y="21" width="225" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Ryg-lO-3hl" secondAttribute="trailing" constant="300" id="3Pw-R8-dxL"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="F2p-Si-2e0" secondAttribute="bottom" constant="0.5" id="Nt0-0S-a6v"/>
+                <constraint firstItem="EIr-8h-HKQ" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="169" id="Rza-Yt-pdw"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="F2p-Si-2e0" secondAttribute="trailing" id="X11-IJ-43L"/>
+                <constraint firstItem="Ryg-lO-3hl" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="27" id="XFN-CW-0JA"/>
+                <constraint firstItem="Ryg-lO-3hl" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="17" id="cBW-xn-flC"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="EIr-8h-HKQ" secondAttribute="bottom" constant="19" id="g7c-KA-WmX"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="Ryg-lO-3hl" secondAttribute="bottom" constant="16" id="hSO-7H-vrA"/>
+                <constraint firstItem="F2p-Si-2e0" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="ndh-a5-hZk"/>
+                <constraint firstItem="F2p-Si-2e0" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="pzK-dq-cR8"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="EIr-8h-HKQ" secondAttribute="trailing" constant="20" id="xsI-K7-Lh6"/>
+                <constraint firstItem="EIr-8h-HKQ" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="21" id="ynT-Bq-ha6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsLabel" destination="EIr-8h-HKQ" id="vG9-l3-JXb"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="29.799107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle" width="375" height="57"/>
+        <image name="Rectangle 2 Copy 4" width="90" height="25"/>
+    </resources>
+</document>

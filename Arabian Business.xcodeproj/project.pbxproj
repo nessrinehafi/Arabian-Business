@@ -7,14 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83695F155136AFAD865A349A /* Pods_Arabian_Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4784AB7DBFE7164E29AE3875 /* Pods_Arabian_Business.framework */; };
+		AE6521D922DF497700AF86F7 /* FeaturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6521D722DF497700AF86F7 /* FeaturesTableViewCell.swift */; };
+		AE6521DA22DF497700AF86F7 /* FeaturesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6521D822DF497700AF86F7 /* FeaturesTableViewCell.xib */; };
+		AE6521DD22DF53E700AF86F7 /* BreakingNewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6521DB22DF53E700AF86F7 /* BreakingNewsViewCell.swift */; };
+		AE6521DE22DF53E700AF86F7 /* BreakingNewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6521DC22DF53E700AF86F7 /* BreakingNewsViewCell.xib */; };
+		AEABDDDD22E05CD500CFA151 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABDDDC22E05CD500CFA151 /* MenuBar.swift */; };
+		AEABDDE322E0799D00CFA151 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABDDE222E0799D00CFA151 /* TestViewController.swift */; };
+		AEABDDE622E07DBB00CFA151 /* NewViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABDDE422E07DBB00CFA151 /* NewViewCellTableViewCell.swift */; };
+		AEABDDE722E07DBB00CFA151 /* NewViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEABDDE522E07DBB00CFA151 /* NewViewCellTableViewCell.xib */; };
+		AEBB2BBF22DE62880028FB2A /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEBB2BBE22DE62880028FB2A /* Slide.xib */; };
+		AEBB2BC122DE62A70028FB2A /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB2BC022DE62A70028FB2A /* Slide.swift */; };
 		AED5151622DDC46700412C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5151522DDC46700412C31 /* AppDelegate.swift */; };
 		AED5151822DDC46700412C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5151722DDC46700412C31 /* ViewController.swift */; };
 		AED5151B22DDC46700412C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED5151922DDC46700412C31 /* Main.storyboard */; };
 		AED5151D22DDC46800412C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5151C22DDC46800412C31 /* Assets.xcassets */; };
 		AED5152022DDC46800412C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED5151E22DDC46800412C31 /* LaunchScreen.storyboard */; };
+		AED5152B22DDCD9200412C31 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5152A22DDCD9200412C31 /* CustomLoader.swift */; };
+		AED5152D22DDD76A00412C31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5152C22DDD76A00412C31 /* HomeViewController.swift */; };
+		AED5153B22DDF45D00412C31 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153722DDF45A00412C31 /* Roboto-Black.ttf */; };
+		AED5153C22DDF46000412C31 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153222DDF45900412C31 /* Roboto-BlackItalic.ttf */; };
+		AED5153D22DDF46300412C31 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153422DDF45900412C31 /* Roboto-Bold.ttf */; };
+		AED5153E22DDF46500412C31 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153A22DDF45A00412C31 /* Roboto-BoldItalic.ttf */; };
+		AED5153F22DDF46800412C31 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153022DDF45900412C31 /* Roboto-Light.ttf */; };
+		AED5154022DDF46B00412C31 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153522DDF45A00412C31 /* Roboto-LightItalic.ttf */; };
+		AED5154122DDF46D00412C31 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5152F22DDF45900412C31 /* Roboto-Medium.ttf */; };
+		AED5154222DDF47000412C31 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153822DDF45A00412C31 /* Roboto-MediumItalic.ttf */; };
+		AED5154322DDF47400412C31 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153622DDF45A00412C31 /* Roboto-Regular.ttf */; };
+		AED5154422DDF47600412C31 /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153322DDF45900412C31 /* Roboto-RegularItalic.ttf */; };
+		AED5154522DDF47900412C31 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153122DDF45900412C31 /* Roboto-Thin.ttf */; };
+		AED5154622DDF47C00412C31 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED5153922DDF45A00412C31 /* Roboto-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4784AB7DBFE7164E29AE3875 /* Pods_Arabian_Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arabian_Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE40276AF931399C16CBEE9 /* Pods-Arabian Business.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arabian Business.debug.xcconfig"; path = "Target Support Files/Pods-Arabian Business/Pods-Arabian Business.debug.xcconfig"; sourceTree = "<group>"; };
+		AE6521D722DF497700AF86F7 /* FeaturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesTableViewCell.swift; sourceTree = "<group>"; };
+		AE6521D822DF497700AF86F7 /* FeaturesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturesTableViewCell.xib; sourceTree = "<group>"; };
+		AE6521DB22DF53E700AF86F7 /* BreakingNewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingNewsViewCell.swift; sourceTree = "<group>"; };
+		AE6521DC22DF53E700AF86F7 /* BreakingNewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreakingNewsViewCell.xib; sourceTree = "<group>"; };
+		AEABDDDC22E05CD500CFA151 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		AEABDDE222E0799D00CFA151 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		AEABDDE422E07DBB00CFA151 /* NewViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		AEABDDE522E07DBB00CFA151 /* NewViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		AEBB2BBE22DE62880028FB2A /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		AEBB2BC022DE62A70028FB2A /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		AED5151222DDC46700412C31 /* Arabian Business.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arabian Business.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED5151522DDC46700412C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AED5151722DDC46700412C31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +59,21 @@
 		AED5151C22DDC46800412C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AED5151F22DDC46800412C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AED5152122DDC46800412C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED5152A22DDCD9200412C31 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		AED5152C22DDD76A00412C31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AED5152F22DDF45900412C31 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		AED5153022DDF45900412C31 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		AED5153122DDF45900412C31 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		AED5153222DDF45900412C31 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AED5153322DDF45900412C31 /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		AED5153422DDF45900412C31 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AED5153522DDF45A00412C31 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		AED5153622DDF45A00412C31 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		AED5153722DDF45A00412C31 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		AED5153822DDF45A00412C31 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		AED5153922DDF45A00412C31 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AED5153A22DDF45A00412C31 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C7C4806CA41DA6532D312ECD /* Pods-Arabian Business.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arabian Business.release.xcconfig"; path = "Target Support Files/Pods-Arabian Business/Pods-Arabian Business.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +81,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83695F155136AFAD865A349A /* Pods_Arabian_Business.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0774FABE4B447460EF41289B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CE40276AF931399C16CBEE9 /* Pods-Arabian Business.debug.xcconfig */,
+				C7C4806CA41DA6532D312ECD /* Pods-Arabian Business.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEBB2BBA22DE61FE0028FB2A /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB2BBE22DE62880028FB2A /* Slide.xib */,
+				AEBB2BC022DE62A70028FB2A /* Slide.swift */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
 		AED5150922DDC46700412C31 = {
 			isa = PBXGroup;
 			children = (
 				AED5151422DDC46700412C31 /* Arabian Business */,
 				AED5151322DDC46700412C31 /* Products */,
+				0774FABE4B447460EF41289B /* Pods */,
+				F5ACD3A87CCDCD5D8C3A0891 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +128,77 @@
 		AED5151422DDC46700412C31 /* Arabian Business */ = {
 			isa = PBXGroup;
 			children = (
-				AED5151522DDC46700412C31 /* AppDelegate.swift */,
-				AED5151722DDC46700412C31 /* ViewController.swift */,
-				AED5151922DDC46700412C31 /* Main.storyboard */,
+				AED5152922DDC9D900412C31 /* Model */,
+				AED5152822DDC9C400412C31 /* Controller */,
+				AED5152722DDC9BB00412C31 /* View */,
 				AED5151C22DDC46800412C31 /* Assets.xcassets */,
+				AED5152E22DDF43A00412C31 /* tools */,
 				AED5151E22DDC46800412C31 /* LaunchScreen.storyboard */,
 				AED5152122DDC46800412C31 /* Info.plist */,
 			);
 			path = "Arabian Business";
+			sourceTree = "<group>";
+		};
+		AED5152722DDC9BB00412C31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB2BBA22DE61FE0028FB2A /* Slide */,
+				AED5151922DDC46700412C31 /* Main.storyboard */,
+				AE6521D722DF497700AF86F7 /* FeaturesTableViewCell.swift */,
+				AE6521D822DF497700AF86F7 /* FeaturesTableViewCell.xib */,
+				AE6521DB22DF53E700AF86F7 /* BreakingNewsViewCell.swift */,
+				AE6521DC22DF53E700AF86F7 /* BreakingNewsViewCell.xib */,
+				AEABDDE422E07DBB00CFA151 /* NewViewCellTableViewCell.swift */,
+				AEABDDE522E07DBB00CFA151 /* NewViewCellTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AED5152822DDC9C400412C31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AED5151522DDC46700412C31 /* AppDelegate.swift */,
+				AED5151722DDC46700412C31 /* ViewController.swift */,
+				AED5152A22DDCD9200412C31 /* CustomLoader.swift */,
+				AED5152C22DDD76A00412C31 /* HomeViewController.swift */,
+				AEABDDDC22E05CD500CFA151 /* MenuBar.swift */,
+				AEABDDE222E0799D00CFA151 /* TestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AED5152922DDC9D900412C31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AED5152E22DDF43A00412C31 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				AED5153722DDF45A00412C31 /* Roboto-Black.ttf */,
+				AED5153222DDF45900412C31 /* Roboto-BlackItalic.ttf */,
+				AED5153422DDF45900412C31 /* Roboto-Bold.ttf */,
+				AED5153A22DDF45A00412C31 /* Roboto-BoldItalic.ttf */,
+				AED5153022DDF45900412C31 /* Roboto-Light.ttf */,
+				AED5153522DDF45A00412C31 /* Roboto-LightItalic.ttf */,
+				AED5152F22DDF45900412C31 /* Roboto-Medium.ttf */,
+				AED5153822DDF45A00412C31 /* Roboto-MediumItalic.ttf */,
+				AED5153622DDF45A00412C31 /* Roboto-Regular.ttf */,
+				AED5153322DDF45900412C31 /* Roboto-RegularItalic.ttf */,
+				AED5153122DDF45900412C31 /* Roboto-Thin.ttf */,
+				AED5153922DDF45A00412C31 /* Roboto-ThinItalic.ttf */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		F5ACD3A87CCDCD5D8C3A0891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4784AB7DBFE7164E29AE3875 /* Pods_Arabian_Business.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AED5152422DDC46800412C31 /* Build configuration list for PBXNativeTarget "Arabian Business" */;
 			buildPhases = (
+				636D671D33EA919B6EBA6A93 /* [CP] Check Pods Manifest.lock */,
 				AED5150E22DDC46700412C31 /* Sources */,
 				AED5150F22DDC46700412C31 /* Frameworks */,
 				AED5151022DDC46700412C31 /* Resources */,
+				746F43099318E97B35AB8206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,13 +261,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6521DE22DF53E700AF86F7 /* BreakingNewsViewCell.xib in Resources */,
+				AED5154622DDF47C00412C31 /* Roboto-ThinItalic.ttf in Resources */,
+				AED5154522DDF47900412C31 /* Roboto-Thin.ttf in Resources */,
+				AED5154122DDF46D00412C31 /* Roboto-Medium.ttf in Resources */,
 				AED5152022DDC46800412C31 /* LaunchScreen.storyboard in Resources */,
 				AED5151D22DDC46800412C31 /* Assets.xcassets in Resources */,
+				AED5153D22DDF46300412C31 /* Roboto-Bold.ttf in Resources */,
+				AEABDDE722E07DBB00CFA151 /* NewViewCellTableViewCell.xib in Resources */,
+				AED5153C22DDF46000412C31 /* Roboto-BlackItalic.ttf in Resources */,
 				AED5151B22DDC46700412C31 /* Main.storyboard in Resources */,
+				AED5154322DDF47400412C31 /* Roboto-Regular.ttf in Resources */,
+				AED5154022DDF46B00412C31 /* Roboto-LightItalic.ttf in Resources */,
+				AED5153E22DDF46500412C31 /* Roboto-BoldItalic.ttf in Resources */,
+				AE6521DA22DF497700AF86F7 /* FeaturesTableViewCell.xib in Resources */,
+				AEBB2BBF22DE62880028FB2A /* Slide.xib in Resources */,
+				AED5153F22DDF46800412C31 /* Roboto-Light.ttf in Resources */,
+				AED5154422DDF47600412C31 /* Roboto-RegularItalic.ttf in Resources */,
+				AED5154222DDF47000412C31 /* Roboto-MediumItalic.ttf in Resources */,
+				AED5153B22DDF45D00412C31 /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		636D671D33EA919B6EBA6A93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arabian Business-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746F43099318E97B35AB8206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arabian Business/Pods-Arabian Business-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arabian Business/Pods-Arabian Business-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arabian Business/Pods-Arabian Business-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AED5150E22DDC46700412C31 /* Sources */ = {
@@ -136,7 +333,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED5151822DDC46700412C31 /* ViewController.swift in Sources */,
+				AE6521DD22DF53E700AF86F7 /* BreakingNewsViewCell.swift in Sources */,
+				AEABDDDD22E05CD500CFA151 /* MenuBar.swift in Sources */,
 				AED5151622DDC46700412C31 /* AppDelegate.swift in Sources */,
+				AED5152B22DDCD9200412C31 /* CustomLoader.swift in Sources */,
+				AED5152D22DDD76A00412C31 /* HomeViewController.swift in Sources */,
+				AE6521D922DF497700AF86F7 /* FeaturesTableViewCell.swift in Sources */,
+				AEABDDE622E07DBB00CFA151 /* NewViewCellTableViewCell.swift in Sources */,
+				AEABDDE322E0799D00CFA151 /* TestViewController.swift in Sources */,
+				AEBB2BC122DE62A70028FB2A /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +485,7 @@
 		};
 		AED5152522DDC46800412C31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE40276AF931399C16CBEE9 /* Pods-Arabian Business.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +504,7 @@
 		};
 		AED5152622DDC46800412C31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C4806CA41DA6532D312ECD /* Pods-Arabian Business.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
