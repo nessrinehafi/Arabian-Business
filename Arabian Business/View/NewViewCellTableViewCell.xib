@@ -27,10 +27,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="395.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEN-SX-oFY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Sxi-aW-rNK">
                         <rect key="frame" x="0.0" y="10" width="414" height="283"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="283" id="DWm-lo-Tz6"/>
                             <constraint firstAttribute="width" constant="414" id="eY6-oj-WlD"/>
                         </constraints>
                     </imageView>
@@ -38,6 +42,9 @@
                         <rect key="frame" x="23" y="229" width="45" height="45"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" image="Oval 2 Copy 3"/>
+                        <connections>
+                            <action selector="menuClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kaV-gD-P5K"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-v4-URt">
                         <rect key="frame" x="6" y="333" width="380" height="20"/>
@@ -105,6 +112,21 @@
                         <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="-59" maxY="0.0"/>
                         <state key="normal" title="Energy" image="Rectangle 2"/>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4j-la-X2Y">
+                        <rect key="frame" x="20" y="162" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="bookmarker"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clK-TC-MAg">
+                        <rect key="frame" x="95" y="229" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="jaime"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-vx-FaU">
+                        <rect key="frame" x="75" y="175" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="share"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Sxi-aW-rNK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Shb-Id-zof"/>
@@ -122,10 +144,8 @@
                 <constraint firstItem="IWu-8g-upS" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="6" id="JMy-kl-zn4"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="7fp-QZ-YKu" secondAttribute="bottom" constant="92" id="Mz7-hQ-eT5"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="Sxi-aW-rNK" secondAttribute="bottom" constant="103" id="VeL-AM-Qrs"/>
-                <constraint firstItem="IWu-8g-upS" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="302" id="cTy-Oe-FSG"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="IWu-8g-upS" secondAttribute="bottom" constant="76" id="eBV-UE-TqT"/>
                 <constraint firstItem="pki-Qk-if9" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="17" id="gYL-pc-lc7"/>
-                <constraint firstItem="Sxi-aW-rNK" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="10" id="pLS-k4-70B"/>
                 <constraint firstItem="7fp-QZ-YKu" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="279" id="s2W-WL-HKM"/>
                 <constraint firstItem="pki-Qk-if9" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="370" id="vGx-hW-q69"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="pki-Qk-if9" secondAttribute="bottom" constant="356" id="zbm-D8-WbY"/>
@@ -135,10 +155,13 @@
             <connections>
                 <outlet property="MenuButton" destination="Kqg-0l-lfl" id="YpF-q2-R9N"/>
                 <outlet property="TagButton" destination="7fp-QZ-YKu" id="rJ5-Uf-slu"/>
+                <outlet property="bookmarkButton" destination="E4j-la-X2Y" id="b7u-Me-tK0"/>
                 <outlet property="dateLabel" destination="Nug-LA-ikm" id="yUK-ut-MVX"/>
+                <outlet property="likeButton" destination="clK-TC-MAg" id="vrT-Dr-kz9"/>
                 <outlet property="likesLabel" destination="kgk-cK-aMD" id="eA9-8M-kgq"/>
-                <outlet property="menuButton" destination="Kqg-0l-lfl" id="MgE-8K-lMy"/>
+                <outlet property="menuButton" destination="Kqg-0l-lfl" id="FTx-1l-env"/>
                 <outlet property="newsImage" destination="Sxi-aW-rNK" id="ZtI-xS-1sw"/>
+                <outlet property="shareButton" destination="7GI-vx-FaU" id="ujY-ED-hwo"/>
                 <outlet property="tagButton" destination="7fp-QZ-YKu" id="1Xj-cz-9sP"/>
                 <outlet property="titleLabel" destination="2AA-v4-URt" id="Hga-YT-cKj"/>
                 <outlet property="viewsLabel" destination="wch-6M-NIc" id="5o6-eP-ujd"/>
@@ -153,6 +176,9 @@
         <image name="Oval 2 Copy 3" width="45" height="45"/>
         <image name="Preview" width="19" height="13"/>
         <image name="Rectangle 2" width="80" height="25"/>
+        <image name="bookmarker" width="45" height="48"/>
         <image name="image" width="200" height="134"/>
+        <image name="jaime" width="45" height="48"/>
+        <image name="share" width="45" height="48"/>
     </resources>
 </document>

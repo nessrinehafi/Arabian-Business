@@ -7,16 +7,31 @@
 //
 
 import UIKit
+import SQLite
 
+let path = NSSearchPathForDirectoriesInDomains(
+    .documentDirectory, .userDomainMask, true
+    ).first
+let databaseFileName = "db.sqlite3"
+let databaseFilePath = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(databaseFileName)"
+let db = try! Connection(databaseFilePath)
 class ViewController: UIViewController {
 
 
     @IBOutlet weak var loaderImage: UIImageView!
-    
+
+
     override func viewDidLoad() {
+        
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+
+     
+
         
+       
         Loader(imageView: loaderImage, aCircleTime: 2)
         self.perform(#selector(changeImageColor), with: nil, afterDelay: 0 )
     }

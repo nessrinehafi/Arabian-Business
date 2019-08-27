@@ -7,23 +7,74 @@
 //
 
 import UIKit
-
+import NewsAPISwift
+import SQLite
+import FirebaseDatabase
 class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollectionViewDelegate, UICollectionViewDataSource
 {
     private var indexOfCellBeforeDragging = 0
     
+
+
+    @IBOutlet weak var viewCollection: UICollectionView!
     @IBOutlet weak var PageController: UIPageControl!
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    var articles = [NewsArticle]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.viewCollection.reloadData()
+            }
+        }
     }
     
+    let newsAPI = NewsAPI(apiKey: "e2519a76a0a343e38b8cad1692c27f0f")
+    var source: NewsSource!
+    
+
+
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return 2
+       return articles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        
+        
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturesCollectionViewCell", for: indexPath as IndexPath) as! FeaturesCollectionViewCell
+        
+        print(articles)
+    
+        cell.titleLabel.text = articles[indexPath.row].title
+
+        let dateFormatter = DateFormatter()
+        
+
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+
+        dateFormatter.dateFormat = "yyyy-mm-dd'T'HH:mm:ss.SSSZ"
+        let date = articles[indexPath.row].publishedAt
+        let url = articles[indexPath.row].urlToImage?.absoluteString
+     
+        if(url == nil)
+        {
+            cell.newsImage.imageFromServerURL(urlString: "https://image.shutterstock.com/image-vector/breaking-news-background-planet-600w-667420906.jpg" )
+            cell.newsImage.contentMode = .scaleAspectFill
+
+        }
+        else{
+          
+            cell.newsImage.imageFromServerURL(urlString: url! )
+            cell.newsImage.contentMode = .scaleToFill
+
+        }
+        dateFormatter.dateStyle = .medium
+        dateFormatter.string(from: date)
+        print(date)
+
+        cell.dateLabel.text =  dateFormatter.string(from: date)
+
         let pages = round(featuresViewCollection.contentSize.width/414)
         PageController.numberOfPages = Int(pages)
         return cell
@@ -32,6 +83,17 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
     
     override func awakeFromNib() {
         super.awakeFromNib()
+ 
+
+        
+        newsAPI.getTopHeadlines(q:"a"){ result in
+            switch result {
+            case .success(let articles):
+                self.articles = articles
+            case .failure(let error):
+                fatalError("\(error)")
+            }
+        }
         PageController.currentPage = 0
         PageController.currentPageIndicatorTintColor = UIColor(red: 188/255, green: 3/255, blue: 21/255, alpha: 1)
         PageController.pageIndicatorTintColor = UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 1)
@@ -61,8 +123,8 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
         targetContentOffset.pointee = scrollView.contentOffset
 
         // Calculate conditions
-        let pageWidth = 410
-        let collectionViewItemCount = 2
+        let pageWidth = 414
+        let collectionViewItemCount =  articles.count
         let proportionalOffset = Float(featuresViewCollection.contentOffset.x) / Float(pageWidth)
         PageController.currentPage = Int(proportionalOffset) 
 
@@ -96,5 +158,24 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
             featuresViewCollection.scrollToItem(at: indexPath, at: .left, animated: true)
         }
     }
-    
+  
 }
+
+extension UIImageView {
+    public func imageFromServerURL(urlString: String) {
+        self.image = nil
+        let urlStringNew = urlString.replacingOccurrences(of: " ", with: "%20")
+        URLSession.shared.dataTask(with: NSURL(string: urlStringNew)! as URL, completionHandler: { (data, response, error) -> Void in
+            
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            DispatchQueue.main.async(execute: { () -> Void in
+                let image = UIImage(data: data!)
+                
+                self.image = image
+            })
+            
+        }).resume()
+    }}

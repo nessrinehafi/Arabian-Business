@@ -50,6 +50,7 @@
             <connections>
                 <outlet property="PageController" destination="wCU-NN-Ldq" id="uaN-xh-pOY"/>
                 <outlet property="featuresViewCollection" destination="gdV-2g-GGS" id="53i-ZU-veh"/>
+                <outlet property="viewCollection" destination="gdV-2g-GGS" id="I1W-BS-geH"/>
             </connections>
             <point key="canvasLocation" x="234.78260869565219" y="-69.308035714285708"/>
         </tableViewCell>
