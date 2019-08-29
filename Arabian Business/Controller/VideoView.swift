@@ -7,10 +7,9 @@ class VideoView: UIView {
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?
     var isLoop: Bool = false
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+
     }
     
     func configure(url: String) {
@@ -19,6 +18,7 @@ class VideoView: UIView {
             playerLayer = AVPlayerLayer(player: player)
             playerLayer?.frame = bounds
             playerLayer?.videoGravity = AVLayerVideoGravity.resize
+
             if let playerLayer = self.playerLayer {
                 layer.addSublayer(playerLayer)
             }

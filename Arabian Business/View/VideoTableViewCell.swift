@@ -8,7 +8,8 @@
 
 import UIKit
 
-class VideoTableViewCell: UITableViewCell {
+class VideoTableViewCell: UITableViewCell  {
+    
     @IBOutlet weak var videoView: VideoView!
     @IBOutlet weak var likesLabel: UILabel!
     
@@ -22,19 +23,52 @@ class VideoTableViewCell: UITableViewCell {
     @IBOutlet weak var tagButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     
-
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var pauseButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
+   
+
         
         bookmarkButton.isHidden = true
         shareButton.isHidden = true
         likeButton.isHidden = true
+        pauseButton.isHidden = true
+        soundButton.isHidden = true
+        durationLabel.isHidden = true
+        slider.isHidden = true
+    
         videoView.configure(url: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+        print(videoView.currentItem)
         videoView.isLoop = true
-        videoView.play()
+        videoView.pause()
+        playButton.addTarget(self, action: #selector(handlePlay), for: .touchUpInside)
+        pauseButton.addTarget(self, action: #selector(handlePause), for: .touchUpInside)
+
         
     }
 
+    @objc func handlePlay()  {
+        
+        videoView.play()
+        menuButton.isHidden = true
+        playButton.isHidden = true
+        soundButton.isHidden = false
+        durationLabel.isHidden = false
+        slider.isHidden = false
+        pauseButton.isHidden = false
+    }
+    @objc func handlePause()  {
+        
+        videoView.pause()
+        menuButton.isHidden = true
+        playButton.isHidden = false
+        pauseButton.isHidden = false
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -42,6 +76,7 @@ class VideoTableViewCell: UITableViewCell {
     }
     
     var num: Int = 1
+    var num2: Int = 1
     @IBAction func menuButtonPressed(_ sender: Any) {
         
         if(num % 2 > 0){
@@ -51,6 +86,8 @@ class VideoTableViewCell: UITableViewCell {
                 self.likeButton.isHidden = false
                 self.shareButton.isHidden = false
                 self.num = self.num + 1
+                self.videoView.pause()
+
             })
         }
         else{
@@ -61,14 +98,5 @@ class VideoTableViewCell: UITableViewCell {
         }
         
     }
-    
-    @IBAction func playVideoPressed(_ sender: Any) {
-        if(num % 2 > 0){
-        self.videoView.pause()
-              }
-       else{
-        self.videoView.play()
-        }
-    }
-    
+
 }
