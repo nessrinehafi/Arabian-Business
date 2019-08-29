@@ -17,4 +17,11 @@ class FeaturesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var newsDataType: UIImageView!
     
     @IBOutlet weak var newsImage: UIImageView!
+    
+    
+    override func awakeFromNib() {
+//        view.mixedBackgroundColor = MixedColor(normal: 0xffffff, night: 0x000000)
+
+    }
+    
 }

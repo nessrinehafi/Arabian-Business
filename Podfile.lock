@@ -65,6 +65,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - NewsAPISwift (2.0)
+  - NightNight (0.5.0)
   - PathMenu (2.0.1)
   - PRRadialMenuPopover (0.1.2)
   - SQLite.swift (0.12.2):
@@ -81,6 +82,7 @@ DEPENDENCIES:
   - Kingfisher
   - MarqueeLabel
   - NewsAPISwift
+  - NightNight
   - PathMenu
   - PRRadialMenuPopover
   - SQLite.swift
@@ -104,6 +106,7 @@ SPEC REPOS:
     - MarqueeLabel
     - nanopb
     - NewsAPISwift
+    - NightNight
     - PathMenu
     - PRRadialMenuPopover
     - SQLite.swift
@@ -126,12 +129,13 @@ SPEC CHECKSUMS:
   MarqueeLabel: b55b26e690b6ad41faedd95cbf5eae6f1d1735b4
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   NewsAPISwift: 61b069546b0170b48ee3ef7a0158b294e125d7b7
+  NightNight: 2a5550fdd9cf424b75ebaab022c26aaba35304c8
   PathMenu: 202e91a1cc6decc47b1912de7af4516a92a503ae
   PRRadialMenuPopover: 1e0235051e1a3ea3d2f9f888cb797b77ef6f0f66
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   Swift_PageMenu: ec0140f0e9c1357e7762037a31f0f275e80f9a08
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ca32f818bec5b6deeeaff47005f6bcf481b6d266
+PODFILE CHECKSUM: 0206035f456e06ae343978b5dbe082bdc66178bd
 
 COCOAPODS: 1.7.4

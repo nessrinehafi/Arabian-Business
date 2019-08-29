@@ -30,7 +30,16 @@
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEN-SX-oFY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.12140516191720963" green="0.12528741359710693" blue="0.13773781061172485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 183 Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="c5q-ty-XWs">
+                        <rect key="frame" x="0.0" y="210" width="414" height="83"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azX-hQ-bem">
+                        <rect key="frame" x="0.0" y="292" width="414" height="104"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Sxi-aW-rNK">
                         <rect key="frame" x="0.0" y="10" width="414" height="283"/>
@@ -47,7 +56,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-v4-URt">
-                        <rect key="frame" x="6" y="333" width="380" height="20"/>
+                        <rect key="frame" x="6" y="333" width="380" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="17"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,8 +162,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="MenuButton" destination="Kqg-0l-lfl" id="YpF-q2-R9N"/>
-                <outlet property="TagButton" destination="7fp-QZ-YKu" id="rJ5-Uf-slu"/>
+                <outlet property="backView" destination="MEN-SX-oFY" id="HHp-gA-iKU"/>
                 <outlet property="bookmarkButton" destination="E4j-la-X2Y" id="b7u-Me-tK0"/>
                 <outlet property="dateLabel" destination="Nug-LA-ikm" id="yUK-ut-MVX"/>
                 <outlet property="likeButton" destination="clK-TC-MAg" id="vrT-Dr-kz9"/>
@@ -164,6 +172,7 @@
                 <outlet property="shareButton" destination="7GI-vx-FaU" id="ujY-ED-hwo"/>
                 <outlet property="tagButton" destination="7fp-QZ-YKu" id="1Xj-cz-9sP"/>
                 <outlet property="titleLabel" destination="2AA-v4-URt" id="Hga-YT-cKj"/>
+                <outlet property="titleView" destination="azX-hQ-bem" id="C4c-Ql-Shg"/>
                 <outlet property="viewsLabel" destination="wch-6M-NIc" id="5o6-eP-ujd"/>
             </connections>
             <point key="canvasLocation" x="40.579710144927539" y="30.133928571428569"/>
@@ -175,6 +184,7 @@
         <image name="Line 38" width="17" height="17"/>
         <image name="Oval 2 Copy 3" width="45" height="45"/>
         <image name="Preview" width="19" height="13"/>
+        <image name="Rectangle 183 Copy 3" width="375" height="100"/>
         <image name="Rectangle 2" width="80" height="25"/>
         <image name="bookmarker" width="45" height="48"/>
         <image name="image" width="200" height="134"/>

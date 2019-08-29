@@ -34,6 +34,10 @@
                             <constraint firstAttribute="height" constant="297" id="nEk-Ve-VUj"/>
                         </constraints>
                     </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 183 Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="5te-me-JIl">
+                        <rect key="frame" x="0.0" y="214" width="414" height="83"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="aZ2-QH-EXv">
                         <rect key="frame" x="20" y="214" width="265" height="18"/>
                         <subviews>
@@ -135,6 +139,7 @@
         <image name="Icon Copy" width="20" height="20"/>
         <image name="Line 38" width="17" height="17"/>
         <image name="Preview" width="19" height="13"/>
+        <image name="Rectangle 183 Copy 3" width="375" height="100"/>
         <image name="image 2" width="165" height="134"/>
     </resources>
 </document>

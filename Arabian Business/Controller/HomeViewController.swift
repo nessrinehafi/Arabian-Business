@@ -131,7 +131,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
         }
         else{
 
-            return 400
+            return 396
         }
     }
     

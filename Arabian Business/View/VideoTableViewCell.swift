@@ -4,9 +4,9 @@
 //
 //  Created by Nessrine on 8/28/19.
 //  Copyright © 2019 com.NessrineHafi. All rights reserved.
-//
-
 import UIKit
+import AVKit
+import AVFoundation
 
 class VideoTableViewCell: UITableViewCell  {
     
@@ -43,15 +43,48 @@ class VideoTableViewCell: UITableViewCell  {
         slider.isHidden = true
     
         videoView.configure(url: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
-        print(videoView.currentItem)
+        let seconds = String(format: "%02d", Int(videoView.getCurrentItemDuration())%60)
+        let minuts = String(format: "%02d", Int(videoView.getCurrentItemDuration())/60)
+        durationLabel.text = "\(minuts):\(seconds)"
+        print("----------------")
         videoView.isLoop = true
         videoView.pause()
         playButton.addTarget(self, action: #selector(handlePlay), for: .touchUpInside)
         pauseButton.addTarget(self, action: #selector(handlePause), for: .touchUpInside)
-
+        soundButton.addTarget(self, action: #selector(handleSound), for: .touchUpInside)
+        slider.addTarget(self, action: #selector(handleSliderChange), for: .valueChanged)
+        
         
     }
-
+    
+    
+    @objc func handleSliderChange()  {
+       print(slider.value)
+        
+        
+        if let duration = videoView?.getCurrentItemDuration() {
+            let value  = Float64(slider.value) * duration
+            let seekTime = CMTime(value: Int64(value), timescale: 1)
+            videoView?.seekToTime(time: seekTime)
+            
+        }
+        
+    }
+    var muteDet = 1
+    
+    @objc func handleSound()  {
+        if(muteDet % 2 > 0)
+        {
+        videoView.mute()
+            muteDet = muteDet + 1
+        }
+        else
+        {
+           videoView.unmute()
+             muteDet = muteDet + 1
+        }
+    
+    }
     @objc func handlePlay()  {
         
         videoView.play()

@@ -14,6 +14,8 @@ class VideoView: UIView {
     
     func configure(url: String) {
         if let videoURL = URL(string: url) {
+            
+     
             player = AVPlayer(url: videoURL)
             playerLayer = AVPlayerLayer(player: player)
             playerLayer?.frame = bounds
@@ -40,7 +42,20 @@ class VideoView: UIView {
         player?.pause()
         player?.seek(to: CMTime.zero)
     }
-    
+    func mute() {
+        player?.isMuted = true
+    }
+    func unmute() {
+        player?.isMuted = false
+    }
+
+     func getCurrentItemDuration() -> Double
+    {
+        let duration = player?.currentItem?.asset.duration
+        let durationSeconds = CMTimeGetSeconds(duration!)
+        
+        return durationSeconds
+    }
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
         if isLoop {
             player?.pause()
@@ -48,4 +63,10 @@ class VideoView: UIView {
             player?.play()
         }
     }
+    func seekToTime(time:CMTime) {
+        player?.seek(to: time, completionHandler: { (Bool) in
+            
+        })
+    }
+    
 }

@@ -36,6 +36,8 @@
 		AE6521DD22DF53E700AF86F7 /* BreakingNewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6521DB22DF53E700AF86F7 /* BreakingNewsViewCell.swift */; };
 		AE6521DE22DF53E700AF86F7 /* BreakingNewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6521DC22DF53E700AF86F7 /* BreakingNewsViewCell.xib */; };
 		AE6E2EDE22EB2EDB00FC689A /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6E2EDD22EB2EDB00FC689A /* FeaturedViewController.swift */; };
+		AE9DA84723188B1B00B435E5 /* VideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9DA84523188B1B00B435E5 /* VideosTableViewCell.swift */; };
+		AE9DA84823188B1B00B435E5 /* VideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9DA84623188B1B00B435E5 /* VideosTableViewCell.xib */; };
 		AEAA68C322F475A40000349D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA68C122F475A40000349D /* SearchTableViewCell.swift */; };
 		AEAA68C422F475A40000349D /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAA68C222F475A40000349D /* SearchTableViewCell.xib */; };
 		AEAA68C722F476370000349D /* SearchFeaturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA68C522F476370000349D /* SearchFeaturesTableViewCell.swift */; };
@@ -116,6 +118,8 @@
 		AE6521DB22DF53E700AF86F7 /* BreakingNewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingNewsViewCell.swift; sourceTree = "<group>"; };
 		AE6521DC22DF53E700AF86F7 /* BreakingNewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreakingNewsViewCell.xib; sourceTree = "<group>"; };
 		AE6E2EDD22EB2EDB00FC689A /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		AE9DA84523188B1B00B435E5 /* VideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewCell.swift; sourceTree = "<group>"; };
+		AE9DA84623188B1B00B435E5 /* VideosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideosTableViewCell.xib; sourceTree = "<group>"; };
 		AEAA68C122F475A40000349D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		AEAA68C222F475A40000349D /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		AEAA68C522F476370000349D /* SearchFeaturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeaturesTableViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 				AEAA68CA22F476E40000349D /* SectionsTableViewCell.xib */,
 				AEBFC7652316F7DC00282845 /* VideoTableViewCell.swift */,
 				AEBFC7662316F7DC00282845 /* VideoTableViewCell.xib */,
+				AE9DA84523188B1B00B435E5 /* VideosTableViewCell.swift */,
+				AE9DA84623188B1B00B435E5 /* VideosTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 				AED5151D22DDC46800412C31 /* Assets.xcassets in Resources */,
 				AEAA68C822F476370000349D /* SearchFeaturesTableViewCell.xib in Resources */,
 				AED5153D22DDF46300412C31 /* Roboto-Bold.ttf in Resources */,
+				AE9DA84823188B1B00B435E5 /* VideosTableViewCell.xib in Resources */,
 				AE42BAC222F456A40021CBBE /* MenuViewController.xib in Resources */,
 				AE49C8C92314364700BD2602 /* GoogleService-Info.plist in Resources */,
 				AEABDDE722E07DBB00CFA151 /* NewViewCellTableViewCell.xib in Resources */,
@@ -456,6 +463,7 @@
 				AE299D0722F841AD000F2233 /* SearchFeaturesCollectionViewCell.swift in Sources */,
 				AE42BAC022F456A40021CBBE /* RootViewController.swift in Sources */,
 				AE299CFA22F821A4000F2233 /* VideoViewController.swift in Sources */,
+				AE9DA84723188B1B00B435E5 /* VideosTableViewCell.swift in Sources */,
 				AEAA68C722F476370000349D /* SearchFeaturesTableViewCell.swift in Sources */,
 				AE4B0BB422FDA94C00254971 /* SearchTableView.swift in Sources */,
 				AE6521DD22DF53E700AF86F7 /* BreakingNewsViewCell.swift in Sources */,

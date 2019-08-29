@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NightNight
 class NewViewCellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var likesLabel: UILabel!
@@ -21,14 +22,23 @@ class NewViewCellTableViewCell: UITableViewCell {
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var tagButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
-
-
-
+    @IBOutlet var backView: UIView!
+    
+    
+    @IBOutlet var titleView: UIView!
+    
     override func awakeFromNib() {
+        
+        
+        titleLabel.mixedTextColor = MixedColor(normal: .black, night: .white)
+        backView.mixedBackgroundColor = MixedColor(normal: UIColor(red: 104/255, green: 105/255, blue: 107/255, alpha: 1), night: UIColor(red: 31/255, green: 32/255, blue: 35/255, alpha: 1))
+        
+       titleView.mixedBackgroundColor = MixedColor(normal: 0xffffff , night: 0x000000)
      bookmarkButton.isHidden = true
      shareButton.isHidden = true
      likeButton.isHidden = true
-        
+        print(Calendar.current.component(.hour, from: Date()))
+     NightNight.theme = .night
     }
         var num : Int = 1
     @IBAction func menuClicked(_ sender: UIButton) {

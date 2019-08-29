@@ -32,14 +32,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CP-iw-AOq">
-                        <rect key="frame" x="23" y="229" width="45" height="45"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="Oval 2 Copy 3"/>
-                        <connections>
-                            <action selector="menuButtonPressed:" destination="6nj-PM-xdC" eventType="touchUpInside" id="gBI-bG-tbG"/>
-                        </connections>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTE-bt-dAr">
                         <rect key="frame" x="6" y="333" width="380" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,24 +88,9 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Copy" translatesAutoresizingMaskIntoConstraints="NO" id="qPO-xa-FtK" userLabel="NewsType">
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="qPO-xa-FtK" userLabel="NewsType">
                         <rect key="frame" x="370" y="17" width="24" height="23"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9n-vH-u1x">
-                        <rect key="frame" x="20" y="162" width="45" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="bookmarker"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbr-Kd-pZv">
-                        <rect key="frame" x="95" y="229" width="45" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="jaime"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWJ-OJ-d2y">
-                        <rect key="frame" x="75" y="175" width="45" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" image="share"/>
-                    </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc3-c9-mlU">
                         <rect key="frame" x="179" y="120" width="55" height="55"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,7 +102,7 @@
                         <state key="normal" image="Pause"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-0:13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-JX-pQs">
-                        <rect key="frame" x="349" y="265" width="28" height="15"/>
+                        <rect key="frame" x="339" y="265" width="37" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,7 +114,7 @@
                         <state key="normal" image="Sound"/>
                     </button>
                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="7.5" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-OU-8QD">
-                        <rect key="frame" x="47" y="259" width="296" height="30"/>
+                        <rect key="frame" x="47" y="259" width="284" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                         <color key="thumbTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -155,15 +132,11 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="Nn6-yd-AF7"/>
             <connections>
-                <outlet property="bookmarkButton" destination="l9n-vH-u1x" id="DIG-Tp-DqO"/>
                 <outlet property="dateLabel" destination="ovx-eA-37z" id="uUJ-3S-geR"/>
                 <outlet property="durationLabel" destination="bdg-JX-pQs" id="aQJ-Ee-efL"/>
-                <outlet property="likeButton" destination="vbr-Kd-pZv" id="qe8-VJ-gfz"/>
                 <outlet property="likesLabel" destination="oD7-Tw-NxR" id="Ghd-Ba-rPB"/>
-                <outlet property="menuButton" destination="9CP-iw-AOq" id="huG-ky-LKW"/>
                 <outlet property="pauseButton" destination="WgX-aU-NaP" id="0WS-dT-E3X"/>
                 <outlet property="playButton" destination="Pc3-c9-mlU" id="phu-Za-foT"/>
-                <outlet property="shareButton" destination="SWJ-OJ-d2y" id="i0V-h2-2uK"/>
                 <outlet property="slider" destination="kb2-OU-8QD" id="fn7-ZL-4gU"/>
                 <outlet property="soundButton" destination="qry-xC-Ke0" id="iBE-g6-L2n"/>
                 <outlet property="titleLabel" destination="fTE-bt-dAr" id="lA1-KA-APq"/>
@@ -175,15 +148,11 @@
     </objects>
     <resources>
         <image name="Calendar" width="17" height="18"/>
-        <image name="Icon Copy" width="20" height="20"/>
         <image name="Line 38" width="17" height="17"/>
-        <image name="Oval 2 Copy 3" width="45" height="45"/>
         <image name="Pause" width="14" height="16"/>
         <image name="Preview" width="19" height="13"/>
         <image name="Sound" width="23" height="16"/>
-        <image name="bookmarker" width="45" height="48"/>
-        <image name="jaime" width="45" height="48"/>
         <image name="play" width="55" height="55"/>
-        <image name="share" width="45" height="48"/>
+        <image name="video" width="24" height="16"/>
     </resources>
 </document>

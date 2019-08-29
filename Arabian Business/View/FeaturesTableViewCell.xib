@@ -34,7 +34,7 @@
                         </connections>
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="wCU-NN-Ldq">
-                        <rect key="frame" x="192" y="259" width="31" height="37"/>
+                        <rect key="frame" x="192" y="262" width="31" height="37"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </pageControl>
                 </subviews>

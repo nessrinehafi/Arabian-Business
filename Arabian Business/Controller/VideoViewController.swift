@@ -21,7 +21,7 @@ class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("VideoTableViewCell", owner: self, options: nil)?.first as! VideoTableViewCell
+        let cell = Bundle.main.loadNibNamed("VideosTableViewCell", owner: self, options: nil)?.first as! VideosTableViewCell
         
         
         return cell
@@ -38,7 +38,7 @@ class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       
-            return 400
+            return 406
       
     }
 

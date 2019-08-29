@@ -5,6 +5,7 @@ ${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
 ${BUILT_PRODUCTS_DIR}/NewsAPISwift/NewsAPISwift.framework
+${BUILT_PRODUCTS_DIR}/NightNight/NightNight.framework
 ${BUILT_PRODUCTS_DIR}/PRRadialMenuPopover/PRRadialMenuPopover.framework
 ${BUILT_PRODUCTS_DIR}/PathMenu/PathMenu.framework
 ${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
