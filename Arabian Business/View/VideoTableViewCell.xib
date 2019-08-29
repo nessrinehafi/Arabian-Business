@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="396" id="6nj-PM-xdC" customClass="VideoTableViewCell" customModule="Arabian_Business" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="396"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6nj-PM-xdC" id="VUr-U9-ErL">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="395.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-It-Wna" customClass="VideoView" customModule="Arabian_Business" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc3-c9-mlU">
+                                <rect key="frame" x="180" y="120" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playVideoPressed:" destination="6nj-PM-xdC" eventType="touchUpInside" id="CM8-3c-6ol"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CP-iw-AOq">
+                        <rect key="frame" x="23" y="229" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="Oval 2 Copy 3"/>
+                        <connections>
+                            <action selector="menuButtonPressed:" destination="6nj-PM-xdC" eventType="touchUpInside" id="gBI-bG-tbG"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTE-bt-dAr">
+                        <rect key="frame" x="6" y="333" width="380" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="17"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-6r-ief">
+                        <rect key="frame" x="6" y="302" width="265" height="18"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-uW-5Ke" userLabel="Calendar Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="18"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9b-7h-CBX" userLabel="CalendarImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="18"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 22 , 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovx-eA-37z">
+                                        <rect key="frame" x="25" y="0.0" width="79" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-py-UXv" userLabel="Views Stack View">
+                                <rect key="frame" x="137" y="0.0" width="49" height="18"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Preview" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1kn-gy-CIY" userLabel="ViewsImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="19" height="18"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izj-bv-r0x">
+                                        <rect key="frame" x="26" y="0.0" width="23" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="86L-Hx-wta" userLabel="Likes Stack View">
+                                <rect key="frame" x="219" y="0.0" width="46" height="18"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 38" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ey3-fT-69u" userLabel="LikeImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="18"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD7-Tw-NxR">
+                                        <rect key="frame" x="24" y="0.0" width="22" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Copy" translatesAutoresizingMaskIntoConstraints="NO" id="qPO-xa-FtK" userLabel="NewsType">
+                        <rect key="frame" x="370" y="17" width="24" height="23"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPu-rS-Pt5">
+                        <rect key="frame" x="279" y="279" width="107" height="25"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-32" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="-59" maxY="0.0"/>
+                        <state key="normal" title="Energy" image="Rectangle 2"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9n-vH-u1x">
+                        <rect key="frame" x="20" y="162" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="bookmarker"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbr-Kd-pZv">
+                        <rect key="frame" x="95" y="229" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="jaime"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWJ-OJ-d2y">
+                        <rect key="frame" x="75" y="175" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="share"/>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="Nn6-yd-AF7" firstAttribute="bottom" secondItem="qPO-xa-FtK" secondAttribute="bottom" constant="356" id="4zg-oU-epL"/>
+                <constraint firstItem="qPO-xa-FtK" firstAttribute="leading" secondItem="Nn6-yd-AF7" secondAttribute="leading" constant="370" id="7dO-Ei-lip"/>
+                <constraint firstItem="cqz-6r-ief" firstAttribute="leading" secondItem="Nn6-yd-AF7" secondAttribute="leading" constant="6" id="MBb-7S-VDC"/>
+                <constraint firstItem="MPu-rS-Pt5" firstAttribute="top" secondItem="Nn6-yd-AF7" secondAttribute="top" constant="279" id="PDe-Pw-boH"/>
+                <constraint firstItem="qPO-xa-FtK" firstAttribute="top" secondItem="Nn6-yd-AF7" secondAttribute="top" constant="17" id="fxZ-9F-kFm"/>
+                <constraint firstItem="MPu-rS-Pt5" firstAttribute="leading" secondItem="Nn6-yd-AF7" secondAttribute="leading" constant="279" id="g8u-lg-uWR"/>
+                <constraint firstItem="Nn6-yd-AF7" firstAttribute="trailing" secondItem="cqz-6r-ief" secondAttribute="trailing" constant="143" id="r3S-HY-bvE"/>
+                <constraint firstItem="Nn6-yd-AF7" firstAttribute="trailing" secondItem="qPO-xa-FtK" secondAttribute="trailing" constant="20" id="ufg-V0-X7u"/>
+                <constraint firstItem="Nn6-yd-AF7" firstAttribute="bottom" secondItem="MPu-rS-Pt5" secondAttribute="bottom" constant="92" id="waD-hM-Eba"/>
+                <constraint firstItem="Nn6-yd-AF7" firstAttribute="trailing" secondItem="MPu-rS-Pt5" secondAttribute="trailing" constant="28" id="xqu-d9-qmt"/>
+                <constraint firstItem="Nn6-yd-AF7" firstAttribute="bottom" secondItem="cqz-6r-ief" secondAttribute="bottom" constant="76" id="yfv-1R-ZRh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Nn6-yd-AF7"/>
+            <connections>
+                <outlet property="bookmarkButton" destination="l9n-vH-u1x" id="DIG-Tp-DqO"/>
+                <outlet property="dateLabel" destination="ovx-eA-37z" id="uUJ-3S-geR"/>
+                <outlet property="likeButton" destination="vbr-Kd-pZv" id="qe8-VJ-gfz"/>
+                <outlet property="likesLabel" destination="oD7-Tw-NxR" id="Ghd-Ba-rPB"/>
+                <outlet property="menuButton" destination="9CP-iw-AOq" id="huG-ky-LKW"/>
+                <outlet property="shareButton" destination="SWJ-OJ-d2y" id="i0V-h2-2uK"/>
+                <outlet property="tagButton" destination="MPu-rS-Pt5" id="LOc-qC-k13"/>
+                <outlet property="titleLabel" destination="fTE-bt-dAr" id="lA1-KA-APq"/>
+                <outlet property="videoView" destination="WTB-It-Wna" id="iIQ-Vn-KQE"/>
+                <outlet property="viewsLabel" destination="izj-bv-r0x" id="2Gb-lR-l63"/>
+            </connections>
+            <point key="canvasLocation" x="40.579710144927539" y="30.133928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Calendar" width="17" height="18"/>
+        <image name="Icon Copy" width="20" height="20"/>
+        <image name="Line 38" width="17" height="17"/>
+        <image name="Oval 2 Copy 3" width="45" height="45"/>
+        <image name="Preview" width="19" height="13"/>
+        <image name="Rectangle 2" width="80" height="25"/>
+        <image name="bookmarker" width="45" height="48"/>
+        <image name="jaime" width="45" height="48"/>
+        <image name="play" width="55" height="55"/>
+        <image name="share" width="45" height="48"/>
+    </resources>
+</document>

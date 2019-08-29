@@ -1,0 +1,6 @@
+framework module DLPageMenu {
+  umbrella header "DLPageMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

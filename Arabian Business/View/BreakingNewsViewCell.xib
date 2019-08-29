@@ -47,6 +47,9 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="labelize" value="NO"/>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="holdScrolling" value="NO"/>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="tapToScroll" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                <real key="value" value="60"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>

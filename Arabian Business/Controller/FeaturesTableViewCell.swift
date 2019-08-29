@@ -26,7 +26,7 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
         }
     }
     
-    let newsAPI = NewsAPI(apiKey: "e2519a76a0a343e38b8cad1692c27f0f")
+    let newsAPI = NewsAPI(apiKey: "857aee26c13b4caeb2eac19347a12dc0")
     var source: NewsSource!
     
 
@@ -38,14 +38,9 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        
-        
-        
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturesCollectionViewCell", for: indexPath as IndexPath) as! FeaturesCollectionViewCell
         
-        print(articles)
-    
+        
         cell.titleLabel.text = articles[indexPath.row].title
 
         let dateFormatter = DateFormatter()
@@ -76,7 +71,7 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
         cell.dateLabel.text =  dateFormatter.string(from: date)
 
         let pages = round(featuresViewCollection.contentSize.width/414)
-        PageController.numberOfPages = Int(pages)
+            PageController.numberOfPages = Int(pages)
         return cell
     }
     

@@ -1,0 +1,137 @@
+PODS:
+  - Alamofire (4.8.2)
+  - DLPageMenu (1.2.0)
+  - Firebase (6.5.0):
+    - Firebase/Core (= 6.5.0)
+  - Firebase/Core (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.0.4)
+  - Firebase/CoreOnly (6.5.0):
+    - FirebaseCore (= 6.1.0)
+  - Firebase/Database (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.0.0)
+  - FirebaseAnalytics (6.0.4):
+    - FirebaseCore (~> 6.1)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.0.4)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (6.1.0):
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/Logger (~> 6.0)
+  - FirebaseDatabase (6.0.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (4.2.2):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - GoogleAppMeasurement (6.0.4):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (6.2.3):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.2.3)
+  - GoogleUtilities/Logger (6.2.3):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.2.3):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.2.3)"
+  - GoogleUtilities/Reachability (6.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.2.3):
+    - GoogleUtilities/Logger
+  - Kingfisher (5.7.0)
+  - leveldb-library (1.20)
+  - MarqueeLabel (4.0.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - NewsAPISwift (2.0)
+  - PathMenu (2.0.1)
+  - PRRadialMenuPopover (0.1.2)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - Swift_PageMenu (1.4.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DLPageMenu
+  - Firebase
+  - Firebase/Database
+  - Kingfisher
+  - MarqueeLabel
+  - NewsAPISwift
+  - PathMenu
+  - PRRadialMenuPopover
+  - SQLite.swift
+  - Swift_PageMenu
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DLPageMenu
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - Kingfisher
+    - leveldb-library
+    - MarqueeLabel
+    - nanopb
+    - NewsAPISwift
+    - PathMenu
+    - PRRadialMenuPopover
+    - SQLite.swift
+    - Swift_PageMenu
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  DLPageMenu: ee79737881774faf06b2ee6d11eb1ab0318589da
+  Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
+  FirebaseAnalytics: 3fb375bc9d13779add4039716f868d233a473fad
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: aecf02fb2274ec361b9bebeac112f5daa18273bd
+  FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
+  FirebaseInstanceID: 662b8108a09fe9ed01aafdedba100fde8536b0f6
+  GoogleAppMeasurement: 183bd916af7f80deb67c01888368f1108d641832
+  GoogleUtilities: d2b0e277a95962e09bb27f5cd42f5f0b6a506c7d
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MarqueeLabel: b55b26e690b6ad41faedd95cbf5eae6f1d1735b4
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  NewsAPISwift: 61b069546b0170b48ee3ef7a0158b294e125d7b7
+  PathMenu: 202e91a1cc6decc47b1912de7af4516a92a503ae
+  PRRadialMenuPopover: 1e0235051e1a3ea3d2f9f888cb797b77ef6f0f66
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  Swift_PageMenu: ec0140f0e9c1357e7762037a31f0f275e80f9a08
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: ca32f818bec5b6deeeaff47005f6bcf481b6d266
+
+COCOAPODS: 1.7.4

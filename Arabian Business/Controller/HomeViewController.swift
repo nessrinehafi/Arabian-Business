@@ -17,8 +17,8 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
 
 
 
-    var ref: DatabaseReference!
     
+    var i: Int = 0
 
     @IBOutlet weak var bookMark: UITabBarItem!
     
@@ -34,13 +34,10 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
         }
     }
     
-    let newsAPI = NewsAPI(apiKey: "e2519a76a0a343e38b8cad1692c27f0f")
-    var source: NewsSource!
+    let newsAPI = NewsAPI(apiKey: "857aee26c13b4caeb2eac19347a12dc0")
     
     
-     func setSelected(_ selected: Bool, animated: Bool) {
-       table setSelected(selected, animated: animated)
-    }
+   
     
     
     private let imageView = UIImageView(image: UIImage(named: "logo"))
@@ -52,7 +49,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
 
     //// table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return articles.count+2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,17 +64,51 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
         }
        else if (indexPath.row == 1)
         {
+            var breakingNews : String = ""
+
             let cell = Bundle.main.loadNibNamed("BreakingNewsViewCell", owner: self, options: nil)?.first as! BreakingNewsViewCell
-            cell.newsLabel.text = "heyyllflfllfepraflapêrg^peakg^pearkg^praegk^pegkp^zekg^pzekg^pekrg^pekg^pekg^pekg^pke^pgk^pekrgp^kea^pgkaêpgkâpekg"
+            for article in articles
+            {
+                
+                breakingNews = breakingNews+" - "+article.title
+                
+                
+            }
+            cell.newsLabel.text = breakingNews
             return cell
 
             
         }
         else{
             let cell = Bundle.main.loadNibNamed("NewViewCellTableViewCell", owner: self, options: nil)?.first as! NewViewCellTableViewCell
+            let currentrow = indexPath.row - 2
+            cell.titleLabel.text = articles[currentrow].title
+            let dateFormatter = DateFormatter()
             
-            cell.titleLabel.text = "NEWS"
             
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            
+            dateFormatter.dateFormat = "yyyy-mm-dd'T'HH:mm:ss.SSSZ"
+            let date = articles[currentrow].publishedAt
+            let url = articles[currentrow].urlToImage?.absoluteString
+            
+            if(url == nil)
+            {
+                cell.newsImage.imageFromServerURL(urlString: "https://image.shutterstock.com/image-vector/breaking-news-background-planet-600w-667420906.jpg" )
+                cell.newsImage.contentMode = .scaleAspectFill
+                
+            }
+            else{
+                
+                cell.newsImage.imageFromServerURL(urlString: url! )
+                cell.newsImage.contentMode = .scaleToFill
+                
+            }
+            dateFormatter.dateStyle = .medium
+            dateFormatter.string(from: date)
+            print(date)
+            
+            cell.dateLabel.text =  dateFormatter.string(from: date)
             return cell
         }
 
@@ -107,11 +138,16 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
   ////////
 
 
-    
     override func viewDidLoad() {
         navigationItem.hidesBackButton = true
-     
-
+        newsAPI.getTopHeadlines(language: .en){ result in
+            switch result {
+            case .success(let articles):
+                self.articles = articles
+            case .failure(let error):
+                print(error)            }
+        }
+      
         tableView.delegate = self
         tableView.dataSource = self
         

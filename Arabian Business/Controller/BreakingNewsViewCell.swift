@@ -15,6 +15,8 @@ class BreakingNewsViewCell: UITableViewCell {
    
     override func awakeFromNib() {
         super.awakeFromNib()
+       newsLabel.type = .continuous
+
         
  
 

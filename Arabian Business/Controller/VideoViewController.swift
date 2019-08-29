@@ -9,14 +9,20 @@
 import UIKit
 
 class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource  {
+    
+    
+    
+    
+ 
+   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("NewViewCellTableViewCell", owner: self, options: nil)?.first as! NewViewCellTableViewCell
+        let cell = Bundle.main.loadNibNamed("VideoTableViewCell", owner: self, options: nil)?.first as! VideoTableViewCell
         
-        cell.titleLabel.text = "NEWS"
         
         return cell
     }

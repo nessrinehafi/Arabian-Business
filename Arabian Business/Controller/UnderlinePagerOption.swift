@@ -59,11 +59,6 @@ public struct UnderlinePagerOption: PageMenuOptions {
 
 
     
-     public init?(coder aDecoder: NSCoder) {
-        
-        self.init(coder: aDecoder)
-    }
-    
     
     public init(isInfinite: Bool = false) {
         self.isInfinite = isInfinite

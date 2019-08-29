@@ -1,0 +1,14 @@
+${PODS_ROOT}/Target Support Files/Pods-Arabian Business/Pods-Arabian Business-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/DLPageMenu/DLPageMenu.framework
+${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/NewsAPISwift/NewsAPISwift.framework
+${BUILT_PRODUCTS_DIR}/PRRadialMenuPopover/PRRadialMenuPopover.framework
+${BUILT_PRODUCTS_DIR}/PathMenu/PathMenu.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${BUILT_PRODUCTS_DIR}/Swift_PageMenu/Swift_PageMenu.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
