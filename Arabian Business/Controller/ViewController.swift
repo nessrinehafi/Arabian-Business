@@ -8,6 +8,7 @@
 
 import UIKit
 import SQLite
+import NightNight
 
 let path = NSSearchPathForDirectoriesInDomains(
     .documentDirectory, .userDomainMask, true
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
             let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
             self.present(navigationController,animated: true, completion: nil)
         //self.performSegue(withIdentifier: "showHome", sender: self)
+            NightNight.theme = .normal
 
     }
     

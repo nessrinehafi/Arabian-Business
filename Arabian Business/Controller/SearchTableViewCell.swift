@@ -9,10 +9,12 @@
 import UIKit
 
 class SearchTableViewCell: UITableViewCell {
+    @IBOutlet var searchbar: UISearchBar!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

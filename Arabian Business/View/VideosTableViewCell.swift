@@ -73,5 +73,7 @@ class VideosTableViewCell: UITableViewCell {
             }
             
         }
+    @IBAction func playButtonPressed(_ sender: UIButton) {
     }
+}
 

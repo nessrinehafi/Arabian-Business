@@ -8,7 +8,7 @@
 //
 
 import UIKit
-
+import NightNight
 class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource  {
     
     
@@ -108,6 +108,7 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
         else {
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[7]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
 
             return cell
         }
@@ -116,7 +117,7 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.row == 0)
         {
-            return 60
+            return 44
             
         }
         else if (indexPath.row == 1)
@@ -161,7 +162,7 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
                                                        y: cell.frame.size.height - additionalSeparatorThickness,
                                                        width: cell.frame.size.width,
                                                        height: additionalSeparatorThickness))
-        additionalSeparator.backgroundColor = UIColor(red: 233/255, green: 233/255, blue: 233/255, alpha: 1)
+        additionalSeparator.mixedBackgroundColor = MixedColor(normal: UIColor(red: 233/255, green: 233/255, blue: 233/255, alpha: 1), night: UIColor(red: 31/255, green: 33/255, blue: 36/255, alpha: 1))
         cell.addSubview(additionalSeparator)
     }
  

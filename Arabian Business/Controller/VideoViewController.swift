@@ -13,7 +13,14 @@ class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
     
     
     
- 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondViewController = storyboard.instantiateViewController(withIdentifier: "VideoDisplayerViewController") as! VideoDisplayerViewController
+        secondViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        secondViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+
+        self.present(secondViewController, animated: true, completion: nil)
+    }
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,7 +29,8 @@ class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("VideosTableViewCell", owner: self, options: nil)?.first as! VideosTableViewCell
-        
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
         
         return cell
     }

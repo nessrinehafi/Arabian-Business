@@ -7,12 +7,14 @@
 //
 
 import UIKit
-
+import NightNight
 class SectionsTableViewCell: UITableViewCell {
 
+    @IBOutlet var backView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backView.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
+        sectionLabel.mixedTextColor = MixedColor(normal: UIColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 1), night: .white)
     }
     @IBOutlet weak var sectionLabel: UILabel!
     

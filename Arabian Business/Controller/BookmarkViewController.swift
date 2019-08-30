@@ -15,7 +15,8 @@ class BookmarkViewController: UIViewController ,UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("NewViewCellTableViewCell", owner: self, options: nil)?.first as! NewViewCellTableViewCell
-        
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
         cell.titleLabel.text = "NEWS"
         
         return cell

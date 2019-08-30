@@ -38,7 +38,6 @@ class NewViewCellTableViewCell: UITableViewCell {
      shareButton.isHidden = true
      likeButton.isHidden = true
         print(Calendar.current.component(.hour, from: Date()))
-     NightNight.theme = .night
     }
         var num : Int = 1
     @IBAction func menuClicked(_ sender: UIButton) {

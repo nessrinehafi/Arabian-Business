@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import NightNight
 class SearchFeaturesTableViewCell: UITableViewCell , UICollectionViewDelegate, UICollectionViewDataSource ,UIScrollViewDelegate {
     
     private var indexOfCellBeforeDragging = 0
 
     @IBOutlet weak var featuresCollection: UICollectionView!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     
@@ -31,8 +31,8 @@ class SearchFeaturesTableViewCell: UITableViewCell , UICollectionViewDelegate, U
         
         return CGSize(width: 207, height: 200)
     }
-    
-    
+
+   
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // PageController.currentPage = Int(pageIndex)
         let pageWidth = 207 // The width your page should have (plus a possible margin)
@@ -42,15 +42,15 @@ class SearchFeaturesTableViewCell: UITableViewCell , UICollectionViewDelegate, U
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        featuresCollection.mixedBackgroundColor = MixedColor(normal: .white, night: .black)
         self.featuresCollection.dataSource = self
         self.featuresCollection.delegate = self
         self.featuresCollection.register(UINib.init(nibName: "SearchFeaturesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SearchFeaturesCollectionViewCell")
         if let layout = featuresCollection?.collectionViewLayout as? UICollectionViewFlowLayout{
             layout.minimumLineSpacing = 10
             layout.minimumInteritemSpacing = 10
-            layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-            let size = CGSize(width:(featuresCollection!.bounds.width-30)/2, height: 250)
+            layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+            let size = CGSize(width:(featuresCollection!.bounds.width-30)/2, height: featuresCollection!.bounds.height)
             layout.itemSize = size
         }
         
@@ -62,13 +62,13 @@ class SearchFeaturesTableViewCell: UITableViewCell , UICollectionViewDelegate, U
 
         // Configure the view for the selected state
     }
-    
+  
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         // Stop scrolling
         targetContentOffset.pointee = scrollView.contentOffset
         
         // Calculate conditions
-        let pageWidth = 414
+        let pageWidth = 207
         let collectionViewItemCount = 2
         let proportionalOffset = Float(featuresCollection.contentOffset.x) / Float(pageWidth)
      

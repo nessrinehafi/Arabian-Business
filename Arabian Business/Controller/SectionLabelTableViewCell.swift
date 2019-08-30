@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import NightNight
 class SectionLabelTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        backView.mixedBackgroundColor = MixedColor(normal: .white, night: .black)    }
 
+    @IBOutlet var backView: UIView!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

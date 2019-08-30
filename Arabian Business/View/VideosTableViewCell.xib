@@ -140,6 +140,9 @@
                         <rect key="frame" x="179" y="120" width="55" height="55"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" image="play"/>
+                        <connections>
+                            <action selector="playButtonPressed:" destination="SbA-Se-ena" eventType="touchUpInside" id="EOa-zD-JEC"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
