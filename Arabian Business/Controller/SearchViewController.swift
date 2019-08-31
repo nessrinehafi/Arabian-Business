@@ -16,14 +16,15 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
     let section = ["GCC" , "INDUSTRIES" , "PROPERTY" , "OPINION" , "LIFESTYLE" , "GALLERY" , "LISTS" , "MARKETS"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 14
+       return 11
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.row == 0)
         {
             let cell = Bundle.main.loadNibNamed("SearchTableViewCell", owner: self, options: nil)?.first as! SearchTableViewCell
-            
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             
             return cell
             
@@ -31,7 +32,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
         else if (indexPath.row == 1)
         {
             let cell = Bundle.main.loadNibNamed("FeaturedLabelTableViewCell", owner: self, options: nil)?.first as! FeaturedLabelTableViewCell
-            
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
             
@@ -39,6 +41,7 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
         else if (indexPath.row == 2)
         {
             let cell = Bundle.main.loadNibNamed("SearchFeaturesTableViewCell", owner: self, options: nil)?.first as! SearchFeaturesTableViewCell
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
 
             return cell
             
@@ -47,6 +50,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
         else if (indexPath.row == 3)
         {
             let cell = Bundle.main.loadNibNamed("SectionLabelTableViewCell", owner: self, options: nil)?.first as! SectionLabelTableViewCell
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             
             return cell
             
@@ -56,6 +61,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
            
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
                 cell.sectionLabel.text = section[0]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
                 return cell
                 
             }
@@ -63,6 +70,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
             
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[1]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
         }
@@ -70,6 +79,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
             
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[2]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
         }
@@ -78,6 +89,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
             
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[3]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
         }
@@ -86,6 +99,8 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
             
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[4]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
         }
@@ -94,14 +109,18 @@ class SearchViewController: UIViewController ,UITableViewDelegate, UITableViewDa
             
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[5]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
         }
             
-        else if (indexPath.row == 10) {
+        else if (indexPath.row == 9) {
             
             let cell = Bundle.main.loadNibNamed("SectionsTableViewCell", owner: self, options: nil)?.first as! SectionsTableViewCell
             cell.sectionLabel.text = section[6]
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
             return cell
             
         }

@@ -9,6 +9,8 @@
 import Foundation
 
 public struct NewsArticle: Equatable, Decodable {
+  
+    
     public struct NewsSource: Equatable, Decodable {
         public let id: String?
         public let name: String
@@ -26,6 +28,7 @@ public struct NewsArticle: Equatable, Decodable {
     public let url: URL
     public let urlToImage: URL?
     public let publishedAt: Date
+    public let content: String?
     
     enum CodingKeys: String, CodingKey {
         case source
@@ -35,9 +38,11 @@ public struct NewsArticle: Equatable, Decodable {
         case url
         case urlToImage
         case publishedAt
+        case content
+
     }
     
-    public init(source: NewsSource, author: String?, title: String, articleDescription: String?, url: URL, urlToImage: URL?, publishedAt: Date) {
+    public init(source: NewsSource, author: String?, title: String, articleDescription: String?, url: URL, urlToImage: URL?, publishedAt: Date , content: String?) {
         self.source = source
         self.author = author
         self.title = title
@@ -45,5 +50,6 @@ public struct NewsArticle: Equatable, Decodable {
         self.url = url
         self.urlToImage = urlToImage
         self.publishedAt = publishedAt
+        self.content = content
     }
 }
