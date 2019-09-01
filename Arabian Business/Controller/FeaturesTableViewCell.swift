@@ -8,7 +8,6 @@
 
 import UIKit
 import NewsAPISwift
-import SQLite
 import FirebaseDatabase
 class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollectionViewDelegate, UICollectionViewDataSource
 {
@@ -81,14 +80,17 @@ class FeaturesTableViewCell: UITableViewCell  , UIScrollViewDelegate , UICollect
  
 
         
-        newsAPI.getTopHeadlines(q:"a"){ result in
+        newsAPI.getTopHeadlines( language : .en ){ result in
             switch result {
             case .success(let articles):
                 self.articles = articles
+                
             case .failure(let error):
-                fatalError("\(error)")
+                print("error")
             }
         }
+ 
+    
         PageController.currentPage = 0
         PageController.currentPageIndicatorTintColor = UIColor(red: 188/255, green: 3/255, blue: 21/255, alpha: 1)
         PageController.pageIndicatorTintColor = UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 1)

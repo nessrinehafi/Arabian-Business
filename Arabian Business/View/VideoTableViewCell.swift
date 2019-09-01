@@ -46,7 +46,7 @@ class VideoTableViewCell: UITableViewCell  {
         let seconds = String(format: "%02d", Int(videoView.getCurrentItemDuration())%60)
         let minuts = String(format: "%02d", Int(videoView.getCurrentItemDuration())/60)
         durationLabel.text = "\(minuts):\(seconds)"
-        print("----------------")
+     //   print("----------------")
         videoView.isLoop = true
         videoView.pause()
         playButton.addTarget(self, action: #selector(handlePlay), for: .touchUpInside)

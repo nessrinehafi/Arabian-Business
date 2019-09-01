@@ -68,9 +68,6 @@ PODS:
   - NightNight (0.5.0)
   - PathMenu (2.0.1)
   - PRRadialMenuPopover (0.1.2)
-  - SQLite.swift (0.12.2):
-    - SQLite.swift/standard (= 0.12.2)
-  - SQLite.swift/standard (0.12.2)
   - Swift_PageMenu (1.4.0)
   - SwiftyJSON (5.0.0)
 
@@ -85,7 +82,6 @@ DEPENDENCIES:
   - NightNight
   - PathMenu
   - PRRadialMenuPopover
-  - SQLite.swift
   - Swift_PageMenu
   - SwiftyJSON
 
@@ -109,7 +105,6 @@ SPEC REPOS:
     - NightNight
     - PathMenu
     - PRRadialMenuPopover
-    - SQLite.swift
     - Swift_PageMenu
     - SwiftyJSON
 
@@ -132,10 +127,9 @@ SPEC CHECKSUMS:
   NightNight: 2a5550fdd9cf424b75ebaab022c26aaba35304c8
   PathMenu: 202e91a1cc6decc47b1912de7af4516a92a503ae
   PRRadialMenuPopover: 1e0235051e1a3ea3d2f9f888cb797b77ef6f0f66
-  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   Swift_PageMenu: ec0140f0e9c1357e7762037a31f0f275e80f9a08
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 0206035f456e06ae343978b5dbe082bdc66178bd
+PODFILE CHECKSUM: 615b7b6e80c70b8f6bed9ce0654863c923b5fac8
 
 COCOAPODS: 1.7.4

@@ -85,13 +85,13 @@ class FeaturedViewController: UIViewController , UITableViewDelegate, UITableVie
         {
             
             
-            print(33333)
+          //  print(33333)
             
             
         }
         else if (item.tag == 1)
         {
-            print(111111111111)
+          //  print(111111111111)
         }
         else if (item.tag == 2)
         {
@@ -108,7 +108,7 @@ class FeaturedViewController: UIViewController , UITableViewDelegate, UITableVie
             self.navigationController?.pushViewController(vc, animated: false)        }
         else
         {
-            print(33333)
+         //   print(33333)
         }
         
     }
@@ -194,7 +194,7 @@ class FeaturedViewController: UIViewController , UITableViewDelegate, UITableVie
     func willMoveToPage(controller: UIViewController, index: Int){
         
         
-        print("nddd")
+      //  print("nddd")
     }
     
     

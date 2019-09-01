@@ -8,10 +8,19 @@
 
 import UIKit
 
-class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource  {
+class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource ,VideoModelDelegate {
+    func dataReady() {
+        self.videos = self.model.arrayVideos
+        self.tableView.reloadData()
+    }
+    
+    var videos:[Video] = [Video]()
+    
+    let arrVideos = NSMutableArray()
+
     
     
-    
+    var model: VideoModel = VideoModel()
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -24,14 +33,14 @@ class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return videos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("VideosTableViewCell", owner: self, options: nil)?.first as! VideosTableViewCell
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
 
-        
+        cell.titleLabel.text = videos[indexPath.row].videoTitle
         return cell
     }
     
@@ -39,7 +48,8 @@ class VideoViewController: UIViewController ,UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.model.delegate = self
+        model.getFeedVideo()
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.

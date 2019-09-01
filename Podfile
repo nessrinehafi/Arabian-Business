@@ -17,6 +17,5 @@ target 'Arabian Business' do
     pod 'Kingfisher'
     pod 'Firebase'
     pod 'Firebase/Database'
-    pod 'SQLite.swift'
     pod 'NightNight'
 end

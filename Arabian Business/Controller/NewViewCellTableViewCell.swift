@@ -17,11 +17,12 @@ class NewViewCellTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var dateLabel: UILabel!
+       @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var tagButton: UIButton!
-    @IBOutlet weak var shareButton: UIButton!
+ 
     @IBOutlet var backView: UIView!
     
     
@@ -37,7 +38,7 @@ class NewViewCellTableViewCell: UITableViewCell {
      bookmarkButton.isHidden = true
      shareButton.isHidden = true
      likeButton.isHidden = true
-        print(Calendar.current.component(.hour, from: Date()))
+      //  print(Calendar.current.component(.hour, from: Date()))
     }
         var num : Int = 1
     @IBAction func menuClicked(_ sender: UIButton) {

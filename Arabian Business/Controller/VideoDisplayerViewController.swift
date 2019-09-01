@@ -11,6 +11,10 @@ import AVKit
 import AVFoundation
 import NightNight
 class VideoDisplayerViewController: UIViewController {
+    
+    
+    var selectedVideo : Video?
+
     @IBOutlet weak var videoView: VideoView!
     @IBOutlet weak var likesLabel: UILabel!
     
@@ -42,7 +46,7 @@ class VideoDisplayerViewController: UIViewController {
         let seconds = String(format: "%02d", Int(videoView.getCurrentItemDuration())%60)
         let minuts = String(format: "%02d", Int(videoView.getCurrentItemDuration())/60)
         durationLabel.text = "\(minuts):\(seconds)"
-        print("----------------")
+      //  print("----------------")
         videoView.isLoop = true
         videoView.pause()
         playButton.addTarget(self, action: #selector(handlePlay), for: .touchUpInside)
@@ -100,6 +104,10 @@ class VideoDisplayerViewController: UIViewController {
         playButton.isHidden = false
         pauseButton.isHidden = false
     }
-
-
+    override func viewDidAppear(_ animated: Bool) {
+        if let vid = self.selectedVideo{
+            
+            self.titleLabel.text = vid.videoTitle
+        }
+    }
 }

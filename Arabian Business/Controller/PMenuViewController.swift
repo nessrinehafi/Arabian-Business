@@ -126,7 +126,7 @@ class PMenuViewController: PageMenuController {
 extension PMenuViewController: PageMenuControllerDataSource {
     
     func viewControllers(forPageMenuController pageMenuController: PageMenuController) -> [UIViewController] {
-        print("Hello word")
+     //   print("Hello word")
         
                 let vc1: HomeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as! HomeViewController
         

@@ -10,12 +10,13 @@ import UIKit
 import NewsAPISwift
 import Firebase
 import FirebaseDatabase
-import SQLite
 import NewsAPISwift
 
 class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource ,UIScrollViewDelegate , UITabBarDelegate {
 
+    var getThatValue = ViewController.GlobalVariable.ArticleList
 
+    var myCustomViewController: ViewController = ViewController(nibName: nil, bundle: nil)
 
     
     var i: Int = 0
@@ -45,8 +46,26 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let secondViewController = storyboard.instantiateViewController(withIdentifier: "DetailedArticleViewController") as? DetailedArticleViewController
+      //  guard let name = articles[1].author else {  return }
+//        secondViewController.titleLabel.text = ""
+        print( articles[indexPath.row-2].title)
+        self.performSegue(withIdentifier: "detailsSegue", sender: indexPath.row)
 
+//        secondViewController!.titleLabel.text = "articles[indexPath.row-2].title"
+      //  self.present(secondViewController!, animated: true, completion: nil)
+        
 
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let destinationVC = segue.destination as? DetailedArticleViewController else {return}
+            let selectedRow = indexPath.row
+            destinationVC.titleLabel.text = articles[selectedRow].title
+        }
+    }
     //// table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count+2
@@ -69,8 +88,8 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
             let cell = Bundle.main.loadNibNamed("BreakingNewsViewCell", owner: self, options: nil)?.first as! BreakingNewsViewCell
             for article in articles
             {
-                
-                breakingNews = breakingNews+" - "+article.title
+                let currentrow = indexPath.row - 1
+                breakingNews = breakingNews+" - "+articles[currentrow].title
                 
                 
             }
@@ -110,6 +129,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
             
             cell.dateLabel.text =  dateFormatter.string(from: date)
             return cell
+
         }
 
     
@@ -139,8 +159,16 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
 
 
     override func viewDidLoad() {
+        
+        
+        
+        for i in getThatValue
+        {
+            print("-----\(i.title)")
+        }
+
         navigationItem.hidesBackButton = true
-        newsAPI.getTopHeadlines(language: .en){ result in
+        newsAPI.getTopHeadlines(category: .general ){ result in
             switch result {
             case .success(let articles):
                 self.articles = articles
@@ -150,7 +178,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
       
         tableView.delegate = self
         tableView.dataSource = self
-        
+      
        // setupMenuBar()
     }
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {

@@ -6,46 +6,24 @@ import UIKit
 
 
 
-public class Article {
-  /*
-    public class NewsSource {
-        public let id: String?
-        public let name: String
- 
-        public init(id: String?, name: String) {
-            self.id = id
-            self.name = name
-        }
-    }*/
-    public var id: Int
-   // public var source: NewsSource = NewsSource(id: "", name: "")
-    public var author: String? = ""
-    public var title: String
-   // public var articleDescription: String?
- //   public var url: URL
- //   public var urlToImage: URL?
-   // public var publishedAt: Date
-    //public var content: String?
+public class Article  {
     
-  /*  public init(id: Int, source: NewsSource, author: String?, title: String, articleDescription: String?, url: URL, urlToImage: URL?, publishedAt: Date , content: String?) {
-        self.id = id
-        self.source = source
-        self.author = author
-        self.title = title
-      //  self.articleDescription = articleDescription
-        //self.url = url
-        //self.urlToImage = urlToImage
-        self.publishedAt = publishedAt
-        self.content = content
-    }*/
+
+    public var id: Int?
+   // public let source: NewsSource?
+    public var title: String?
+    public var likes: Int?
+    public var seen: Int?
+    public var saved: Int?
     
-    public init(id: Int, author: String?, title: String) {
+    
+    public init(id: Int? ,  title: String?, likes: Int?, seen: Int?, saved: Int?) {
         self.id = id
-        self.author = author
         self.title = title
-     
-    }
   
-    
-    
+        self.likes = 0
+        self.seen = 0
+        self.saved = 0
+        
+    }
 }
