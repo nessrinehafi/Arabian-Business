@@ -1,0 +1,6 @@
+framework module Pods_Arabian_Business {
+  umbrella header "Pods-Arabian Business-umbrella.h"
+
+  export *
+  module * { export * }
+}

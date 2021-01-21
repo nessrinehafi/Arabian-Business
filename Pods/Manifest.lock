@@ -1,0 +1,16 @@
+PODS:
+  - EFAutoScrollLabel (5.0.0)
+
+DEPENDENCIES:
+  - EFAutoScrollLabel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EFAutoScrollLabel
+
+SPEC CHECKSUMS:
+  EFAutoScrollLabel: 1b6a68a3ae3fd7c6a16c01ea258f14229f9693ed
+
+PODFILE CHECKSUM: 3cd8b47898a3db9a76a1da06c878421a41412901
+
+COCOAPODS: 1.7.4

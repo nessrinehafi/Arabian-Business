@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		517BB25F2413A123DBCD7F1BC63BE7CF /* EFAutoScrollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC7255498212515F84A957A8ADE09C /* EFAutoScrollLabel.swift */; };
+		56290B8C95A0EE1B63BB61CE4037B6E0 /* EFAutoScrollLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B4FC15162B725FC8F503939CFF4A4C /* EFAutoScrollLabel-dummy.m */; };
+		6719515336E2E6D6B39C9DAC3B0F1AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C24FEE559DEA4799A458DA03B0808B4C /* EFAutoScrollLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 330B0A317F9C27BFB61862B6B55DC538 /* EFAutoScrollLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0242E332CFF6FAD82DD33D68C6801FB /* Pods-Arabian Business-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A4EDB6BEFAD934CAFBA028530A3151 /* Pods-Arabian Business-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8DAA588BFD91FAF220AE122ADD6C82E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FD711417570EF081DB69660B2327396F /* Pods-Arabian Business-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 912328E722DAEFA014E112EEA6A9F34D /* Pods-Arabian Business-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35ED9E951146A596C60952BEB67D48C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBD2A06EA529519EDBF6877CB1FF046;
+			remoteInfo = EFAutoScrollLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025693B03CC6ECCD12C4AD9D6815DBC8 /* EFAutoScrollLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EFAutoScrollLabel-prefix.pch"; sourceTree = "<group>"; };
+		05CA3A8F37494ADCC7B2525F2D952D13 /* Pods-Arabian Business.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Arabian Business.modulemap"; sourceTree = "<group>"; };
+		143583C263F67E534F0E17A6CD29A2E0 /* Pods_Arabian_Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arabian_Business.framework; path = "Pods-Arabian Business.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DC7255498212515F84A957A8ADE09C /* EFAutoScrollLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EFAutoScrollLabel.swift; path = EFAutoScrollLabel/Classes/EFAutoScrollLabel.swift; sourceTree = "<group>"; };
+		21B9A3D2DD59EBD91E2DAE172AA93310 /* EFAutoScrollLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EFAutoScrollLabel.framework; path = EFAutoScrollLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		330B0A317F9C27BFB61862B6B55DC538 /* EFAutoScrollLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EFAutoScrollLabel-umbrella.h"; sourceTree = "<group>"; };
+		37561B23450BC2040658E283EB5A5756 /* EFAutoScrollLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EFAutoScrollLabel.modulemap; sourceTree = "<group>"; };
+		52343AB918F7789E9ACF29060AAD9B87 /* Pods-Arabian Business.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arabian Business.debug.xcconfig"; sourceTree = "<group>"; };
+		5439E34F1AA33F46F04A75396F01E2B6 /* Pods-Arabian Business-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arabian Business-frameworks.sh"; sourceTree = "<group>"; };
+		57DB8352A4CABB7280A58C30DF2C06EF /* EFAutoScrollLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EFAutoScrollLabel.xcconfig; sourceTree = "<group>"; };
+		67A4EDB6BEFAD934CAFBA028530A3151 /* Pods-Arabian Business-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arabian Business-umbrella.h"; sourceTree = "<group>"; };
+		912328E722DAEFA014E112EEA6A9F34D /* Pods-Arabian Business-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arabian Business-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0DF4F65DFE43ECF4DA82D1269014256 /* EFAutoScrollLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EFAutoScrollLabel-Info.plist"; sourceTree = "<group>"; };
+		A3C3AE3D88EEEF8862B3A84F32CC9EFD /* Pods-Arabian Business-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arabian Business-acknowledgements.plist"; sourceTree = "<group>"; };
+		A69A488952D5248433C1AD3CA58C846C /* Pods-Arabian Business.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arabian Business.release.xcconfig"; sourceTree = "<group>"; };
+		AFA2EEF3A442108F8EE2479E45B08866 /* Pods-Arabian Business-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Arabian Business-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8B4FC15162B725FC8F503939CFF4A4C /* EFAutoScrollLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EFAutoScrollLabel-dummy.m"; sourceTree = "<group>"; };
+		FF3FD6554DD56B4241073BCB61DE3A61 /* Pods-Arabian Business-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arabian Business-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CF59FD289F8E913D5D2AA5559499FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DAA588BFD91FAF220AE122ADD6C82E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB1BDF7E0AC8B03BC63E36C81AF9FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6719515336E2E6D6B39C9DAC3B0F1AAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F5FDCD5695C66FF2A4B0D7B8774227A /* Pods-Arabian Business */ = {
+			isa = PBXGroup;
+			children = (
+				05CA3A8F37494ADCC7B2525F2D952D13 /* Pods-Arabian Business.modulemap */,
+				AFA2EEF3A442108F8EE2479E45B08866 /* Pods-Arabian Business-acknowledgements.markdown */,
+				A3C3AE3D88EEEF8862B3A84F32CC9EFD /* Pods-Arabian Business-acknowledgements.plist */,
+				912328E722DAEFA014E112EEA6A9F34D /* Pods-Arabian Business-dummy.m */,
+				5439E34F1AA33F46F04A75396F01E2B6 /* Pods-Arabian Business-frameworks.sh */,
+				FF3FD6554DD56B4241073BCB61DE3A61 /* Pods-Arabian Business-Info.plist */,
+				67A4EDB6BEFAD934CAFBA028530A3151 /* Pods-Arabian Business-umbrella.h */,
+				52343AB918F7789E9ACF29060AAD9B87 /* Pods-Arabian Business.debug.xcconfig */,
+				A69A488952D5248433C1AD3CA58C846C /* Pods-Arabian Business.release.xcconfig */,
+			);
+			name = "Pods-Arabian Business";
+			path = "Target Support Files/Pods-Arabian Business";
+			sourceTree = "<group>";
+		};
+		47DDBBF11B03FDFFD16889CA590AA262 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5FDCD5695C66FF2A4B0D7B8774227A /* Pods-Arabian Business */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		929691A72D940F5919A349D73268A573 /* EFAutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				17DC7255498212515F84A957A8ADE09C /* EFAutoScrollLabel.swift */,
+				DD78187E36A5A4B7EC3C6C76735AFB0D /* Support Files */,
+			);
+			name = EFAutoScrollLabel;
+			path = EFAutoScrollLabel;
+			sourceTree = "<group>";
+		};
+		BFB1DD84083E10C88B9D69BAB1167E6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				929691A72D940F5919A349D73268A573 /* EFAutoScrollLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CDFAE8FE8FFB16DB38264E5D52B4A09A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B9A3D2DD59EBD91E2DAE172AA93310 /* EFAutoScrollLabel.framework */,
+				143583C263F67E534F0E17A6CD29A2E0 /* Pods_Arabian_Business.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BFB1DD84083E10C88B9D69BAB1167E6D /* Pods */,
+				CDFAE8FE8FFB16DB38264E5D52B4A09A /* Products */,
+				47DDBBF11B03FDFFD16889CA590AA262 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD78187E36A5A4B7EC3C6C76735AFB0D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37561B23450BC2040658E283EB5A5756 /* EFAutoScrollLabel.modulemap */,
+				57DB8352A4CABB7280A58C30DF2C06EF /* EFAutoScrollLabel.xcconfig */,
+				D8B4FC15162B725FC8F503939CFF4A4C /* EFAutoScrollLabel-dummy.m */,
+				A0DF4F65DFE43ECF4DA82D1269014256 /* EFAutoScrollLabel-Info.plist */,
+				025693B03CC6ECCD12C4AD9D6815DBC8 /* EFAutoScrollLabel-prefix.pch */,
+				330B0A317F9C27BFB61862B6B55DC538 /* EFAutoScrollLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EFAutoScrollLabel";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0D6E525564CB5F157902C0D68B373491 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24FEE559DEA4799A458DA03B0808B4C /* EFAutoScrollLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E69C259A761AA02CD84DDA1F4A525D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0242E332CFF6FAD82DD33D68C6801FB /* Pods-Arabian Business-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3FBD2A06EA529519EDBF6877CB1FF046 /* EFAutoScrollLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 691C0489E3FC95107FEF8C466EC59111 /* Build configuration list for PBXNativeTarget "EFAutoScrollLabel" */;
+			buildPhases = (
+				0D6E525564CB5F157902C0D68B373491 /* Headers */,
+				3118BAC31CD5EEEA74FD9D0272D54348 /* Sources */,
+				FAFB1BDF7E0AC8B03BC63E36C81AF9FB /* Frameworks */,
+				F834A50BD6D27F30300E7A3A06E42923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EFAutoScrollLabel;
+			productName = EFAutoScrollLabel;
+			productReference = 21B9A3D2DD59EBD91E2DAE172AA93310 /* EFAutoScrollLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C5230F5907CF533F3CA6DA84CCE8FEC /* Pods-Arabian Business */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F13C1D84067BF6477C17515267B979F6 /* Build configuration list for PBXNativeTarget "Pods-Arabian Business" */;
+			buildPhases = (
+				75E69C259A761AA02CD84DDA1F4A525D /* Headers */,
+				4BF5791FE4700F3E5CE6961C6D7020C1 /* Sources */,
+				5CF59FD289F8E913D5D2AA5559499FBE /* Frameworks */,
+				8A3BC8F747B97DD42919CB5E8F118200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC1DE0CFC7269A3A26DBC966DFE1A03 /* PBXTargetDependency */,
+			);
+			name = "Pods-Arabian Business";
+			productName = "Pods-Arabian Business";
+			productReference = 143583C263F67E534F0E17A6CD29A2E0 /* Pods_Arabian_Business.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CDFAE8FE8FFB16DB38264E5D52B4A09A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBD2A06EA529519EDBF6877CB1FF046 /* EFAutoScrollLabel */,
+				9C5230F5907CF533F3CA6DA84CCE8FEC /* Pods-Arabian Business */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A3BC8F747B97DD42919CB5E8F118200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F834A50BD6D27F30300E7A3A06E42923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3118BAC31CD5EEEA74FD9D0272D54348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56290B8C95A0EE1B63BB61CE4037B6E0 /* EFAutoScrollLabel-dummy.m in Sources */,
+				517BB25F2413A123DBCD7F1BC63BE7CF /* EFAutoScrollLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BF5791FE4700F3E5CE6961C6D7020C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD711417570EF081DB69660B2327396F /* Pods-Arabian Business-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC1DE0CFC7269A3A26DBC966DFE1A03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EFAutoScrollLabel;
+			target = 3FBD2A06EA529519EDBF6877CB1FF046 /* EFAutoScrollLabel */;
+			targetProxy = 35ED9E951146A596C60952BEB67D48C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34F7E2EF7F994995A9469009F8E7A579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DB8352A4CABB7280A58C30DF2C06EF /* EFAutoScrollLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EFAutoScrollLabel/EFAutoScrollLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EFAutoScrollLabel/EFAutoScrollLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EFAutoScrollLabel/EFAutoScrollLabel.modulemap";
+				PRODUCT_MODULE_NAME = EFAutoScrollLabel;
+				PRODUCT_NAME = EFAutoScrollLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5C226AB45FB538F2D1E354C9EF37837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DB8352A4CABB7280A58C30DF2C06EF /* EFAutoScrollLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EFAutoScrollLabel/EFAutoScrollLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EFAutoScrollLabel/EFAutoScrollLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EFAutoScrollLabel/EFAutoScrollLabel.modulemap";
+				PRODUCT_MODULE_NAME = EFAutoScrollLabel;
+				PRODUCT_NAME = EFAutoScrollLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		950421592F703FF6D5AE269FF6155C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52343AB918F7789E9ACF29060AAD9B87 /* Pods-Arabian Business.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arabian Business/Pods-Arabian Business-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arabian Business/Pods-Arabian Business.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F88B8A2F5295A30E112267CD359E1B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69A488952D5248433C1AD3CA58C846C /* Pods-Arabian Business.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arabian Business/Pods-Arabian Business-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arabian Business/Pods-Arabian Business.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		691C0489E3FC95107FEF8C466EC59111 /* Build configuration list for PBXNativeTarget "EFAutoScrollLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C226AB45FB538F2D1E354C9EF37837D /* Debug */,
+				34F7E2EF7F994995A9469009F8E7A579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F13C1D84067BF6477C17515267B979F6 /* Build configuration list for PBXNativeTarget "Pods-Arabian Business" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950421592F703FF6D5AE269FF6155C54 /* Debug */,
+				F88B8A2F5295A30E112267CD359E1B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
